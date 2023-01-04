@@ -1,0 +1,66 @@
+$primary-color: #FF4081;
+$secondary-color: #FF6F00;
+$accent-color-1: #00C853;
+$background-color: black;
+$text-color: white;
+$divider-color: #292929;
+$table-color: #5F5F5F;
+
+$mobile: 600px;
+$desktop: 960px;
+
+$title-font: "Brice Black", sans-serif;
+$heading-font: "Brice Regular", sans-serif;
+$p-font: "Graphik Regular", sans-serif;
+$sub-font: "Graphik Medium", sans-serif;
+$button-font: "Brice Bold", sans-serif;
+
+$desktop-padding: 8vw;
+$mobile-padding: 10vw;
+
+@font-face {
+    font-family: "Brice Black";
+    src: url("../assets/fonts/Brice-Black.otf") format("opentype");
+}
+  
+@font-face {
+    font-family: "Brice Bold";
+    src: url("../assets/fonts/Brice-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Brice Regular";
+    src: url("../assets/fonts/Brice-Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Graphik Medium";
+    src: url("../assets/fonts/GraphikMedium.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Graphik Regular";
+    src: url("../assets/fonts/GraphikRegular.otf") format("otf");
+}
+  
+html {
+    scroll-behavior: auto;
+    scroll-padding-top: 4rem;
+  
+    @media only screen and (min-width: $mobile) {
+        scroll-padding-top: 7rem;
+    }
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    color: $text-color;
+    background-color: $background-color;
+    font-family: $p-font;
+  }
