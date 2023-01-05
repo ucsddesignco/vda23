@@ -30,7 +30,7 @@ $mobile-padding: 10vw;
 
 @font-face {
     font-family: "Brice Regular";
-    src: url("../assets/fonts/Brice-Regular.otf") format("otf");
+    src: url("../assets/fonts/Brice-Regular.otf") format("opentype");
 }
 
 @font-face {
@@ -63,4 +63,25 @@ body {
     color: $text-color;
     background-color: $background-color;
     font-family: $p-font;
-  }
+}
+
+h1 {
+    font-family: $title-font;
+}
+
+h2 {
+    font-family: $heading-font;
+    font-size: 4vw;
+    line-height: 90%;
+}
+
+h3 {
+    font-family: $heading-font;
+    font-size: 1.5rem;
+    line-height: 108%;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 155%;
+}

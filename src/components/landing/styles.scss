@@ -1,0 +1,121 @@
+@import '../../styles/base.scss';
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    grid-gap: 2px;
+
+    .grid-child-pink {
+        background-color: $primary-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .dco-logo {
+            width: 15vw;
+        }
+
+        .vda-logo {
+            width: 32vw;
+            margin-top: 2.5vw;
+        }
+    }
+
+    .grid-child-orange {
+        background-color: $secondary-color;
+        color: #000;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        padding-left: 1.5vw;
+        max-height: 25vw;
+
+        .hero-title {
+            font-family: $title-font;
+            font-size: 6vw;
+            line-height: 5vw;
+        }
+    }
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .green-blob {
+        width: 54vw;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        position: absolute;
+        top: 18vw;
+    }
+
+    .grid-child-text {
+        padding: 4rem 8vw;
+
+        h2 {
+            margin-bottom: 2.5rem;
+        }
+    
+        h3 {
+            margin-bottom: 2.25rem;
+        }
+
+        .bottom-container {
+            display: flex;
+            flex-direction: column;
+
+            .response-container {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 1.5rem;
+
+                img {
+                    height: 1.5rem;
+                    margin-right: 1.5rem;
+                }
+            }
+
+            .response-container:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .grid-child-orange2 {
+        background-color: $secondary-color;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+        padding-left: 8vw;
+        padding-right: 8vw;
+        justify-content: center;
+
+        .response-container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1.5rem;
+
+            img {
+                height: 1.5rem;
+                margin-right: 1.5rem;
+            }
+
+            p {
+                font-size: 1.5rem;
+                line-height: 100%;
+            }
+        }
+
+        .response-container:first-child {
+            margin-top: 0;
+        }
+    }
+}

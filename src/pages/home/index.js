@@ -1,9 +1,12 @@
-import React from 'react'
-import './styles.scss'
+import React from 'react';
+import Landing from '../../components/landing';
+import './styles.scss';
 
 function Home() {
   return (
-    <div>hello</div>
+    <div>
+      <Landing />
+    </div>
   )
 }
 
