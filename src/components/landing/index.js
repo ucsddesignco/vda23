@@ -67,7 +67,7 @@ function Landing() {
 
             <div className='grid-child-text'>
                 <h2>VISUAL DESIGN APPRENTICESHIP</h2>
-                <p>
+                <p className='justify'>
                     Design Co’s first ever Visual Design Apprenticeship is a 12-week long 
                     program where student designers will work on a variety of hands-on 
                     assignments focusing on visual, graphic, and brand design. <br></br><br></br>
