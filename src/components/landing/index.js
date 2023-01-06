@@ -82,6 +82,10 @@ function Landing() {
                 <img className='green-blob' src={Green}/>
             </div>
 
+        </div>
+
+        <div className='grid-container2'>
+
             <div className='grid-child-orange2'>
                 {messagesArray.map((message) => (
                     <div className='response-container'>
