@@ -1,0 +1,90 @@
+@import '../../styles/base.scss';
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $background-color;
+    padding: 4rem $desktop-padding;
+
+    .footer-left {
+        display: flex;
+        flex-direction: row;
+        font-family: $sub-font;
+        align-items: center;
+
+        p {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            @media only screen and (max-width: $desktop) {
+                font-size: 1.25rem;
+            }
+        }
+        .footer-logo {
+            display: flex;
+            flex-direction: row;
+
+            .dco-footer-logo {
+                margin-left: 1rem;
+            }
+        }
+    }
+    .footer-right {
+        text-transform: uppercase;
+
+        a {
+            font-family: $p-font;
+            text-decoration: underline;
+            color: white;
+        }
+    }
+
+    @media only screen and (max-width: $desktop) {
+        .footer-left {
+            .footer-logo {
+                .heart-icon {
+                    height: 0.75rem;
+                }
+                .dco-footer-logo {
+                    height: 0.75rem;
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: $mobile) {
+        padding: 2rem 6vw;
+
+        .footer-left {
+            p {
+                margin-right: 0.5rem;
+                font-size: 12px;
+            }
+            .footer-logo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+    
+                .heart-icon {
+                    height: 0.5rem;
+                }
+                .dco-footer-logo {
+                    margin-left: 0.5rem;
+                    height: 0.5rem;
+                    transform: translateY(-0.1rem);
+                }
+            }
+        }
+        .footer-right {
+            margin-bottom: 0.2rem;
+    
+            a {
+                text-decoration: underline;
+                color: white;
+                font-size: 10px;
+            }
+        }
+    }
+}
