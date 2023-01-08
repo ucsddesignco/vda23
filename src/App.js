@@ -25,7 +25,7 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/programOverview" element={<ProgramOverview />} />
+        <Route path="/overview" element={<ProgramOverview />} />
       </Routes>
     </Router>
   );
