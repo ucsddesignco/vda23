@@ -1,0 +1,157 @@
+@import '../../styles/base.scss';
+
+.modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.7;
+        z-index: 1000;
+    }
+
+    .modal {
+        display: flex;
+        flex-direction: column;
+        z-index: 10000;
+        background-color: black;
+        height: 42vw;
+        width: 45vw;
+        overflow: hidden;
+        position: relative;
+
+        @media only screen and (max-width: $desktop) {
+            height: 60vw;
+            width: 60vw;
+        }
+        @media only screen and (max-width: $mobile) {
+            height: 80vh;
+            width: 100vw;
+        }
+        .top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border: solid black 2px;
+            height: 8vw;
+
+            @media only screen and (max-width: $desktop) {
+                height: 10vw;
+            }
+            @media only screen and (max-width: $mobile) {
+                height: 12vh;
+            }
+            .profile {
+                object-fit: contain;
+                height: 8vw;
+                border-right: solid black 2px;
+
+                @media only screen and (max-width: $desktop) {
+                    height: 10vw;
+                }
+                @media only screen and (max-width: $mobile) {
+                    height: 12vh;
+                }
+            }
+            h2 {
+                color: black;
+                font-family: $button-font;
+                font-size: 3vw;
+                margin: 0;
+                transform: translateY(0.2vw);
+
+                @media only screen and (max-width: $desktop) {
+                    font-size: 4vw;
+                    transform: translateY(0.3vw);
+                }
+                @media only screen and (max-width: $mobile) {
+                    font-size: 1.5rem;
+                    transform: translateY(0.3vh);
+                }
+            }
+            .cross {
+                margin-right: 2rem;
+                cursor: pointer;
+            }
+        }
+        .green {
+            background-color: $accent-color-1;
+        }
+        .pink {
+            background-color: $primary-color;
+        }
+        .orange {
+            background-color: $secondary-color;
+        }
+        .middle {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            margin: 2rem 3rem;
+            
+            h4 {
+                font-family: $heading-font;
+                margin-bottom: 0.5rem;
+                font-size: 1.5vw;
+
+                @media only screen and (max-width: $desktop) {
+                    font-size: 2vw;
+                }
+                @media only screen and (max-width: $mobile) {
+                    font-size: 1.1rem;
+                }
+            }
+            p {
+                font-family: $p-font;
+                margin-bottom: 1rem;
+                font-size: 1.2vw;
+                width: 100%;
+
+                @media only screen and (max-width: $desktop) {
+                    font-size: 1.75vw;
+                }
+                @media only screen and (max-width: $mobile) {
+                    font-size: 0.8rem;
+                }
+            }
+            .text-small {
+                width: 80%;
+                @media only screen and (max-width: $desktop) {
+                    width: 70%;
+                }
+                @media only screen and (max-width: $mobile) {
+                    width: 60%;
+                }
+            }
+            
+        }
+        .symbol {
+            position: absolute;
+            object-fit: contain;
+            height: 16vw;
+            right: -2vw;
+            bottom: -2vw;
+
+            @media only screen and (max-width: $desktop) {
+                height: 22vw;
+            }
+            @media only screen and (max-width: $mobile) {
+                height: 9rem;
+                right: 5vw;
+                bottom: 0;
+            }
+        }
+    }
+}

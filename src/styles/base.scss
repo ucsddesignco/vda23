@@ -25,7 +25,7 @@ $mobile-padding: 10vw;
   
 @font-face {
     font-family: "Brice Bold";
-    src: url("../assets/fonts/Brice-Bold.otf") format("otf");
+    src: url("../assets/fonts/Brice-Bold.otf") format("opentype");
 }
 
 @font-face {
@@ -35,12 +35,12 @@ $mobile-padding: 10vw;
 
 @font-face {
     font-family: "Graphik Medium";
-    src: url("../assets/fonts/GraphikMedium.otf") format("otf");
+    src: url("../assets/fonts/GraphikMedium.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Graphik Regular";
-    src: url("../assets/fonts/GraphikRegular.otf") format("otf");
+    src: url("../assets/fonts/GraphikRegular.otf") format("opentype");
 }
   
 html {

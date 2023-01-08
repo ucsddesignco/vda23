@@ -1,0 +1,14 @@
+@import '../../styles/base.scss';
+
+.tools {
+    .grid-container2 {
+        p {
+            text-align: start;
+        }
+        .pink-blob {
+            position: absolute;
+            width: 50vw;
+            transform: translateY(-20vw);
+        }
+    }
+}

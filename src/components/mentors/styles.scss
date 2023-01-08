@@ -1,0 +1,120 @@
+@import '../../styles/base.scss';
+
+.mentors {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem $desktop-padding;
+
+    @media only screen and (max-width: $mobile) {
+        padding: 2rem $mobile-padding;
+    }
+    h2 {
+        margin-bottom: 2.5rem;
+    }
+    p {
+        width: 33vw;
+
+        @media only screen and (max-width: $mobile) {
+            width: 100%;
+        }
+    }
+    .mentors-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2.5rem;
+
+        @media only screen and (max-width: $mobile) {
+            flex-direction: column;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            height: 14vw;
+            width: 21vw;
+            border: 1px solid black;
+            overflow: hidden;
+            cursor: pointer;
+
+            @media only screen and (max-width: $mobile) {
+                width: 76vw;
+                height: 4rem;
+
+                .symbol-left {
+                    transform: translate(-30vw, -1rem);
+                }
+                .symbol-midleft {
+                    transform: translate(-20vw, -1rem);
+                }
+                .symbol-newleft {
+                    transform: translate(-25vw, -2rem);
+                    height: 8rem;
+                }
+                .symbol-midright {
+                    transform: translate(3vw, 0.5rem);
+                }
+                .symbol-right {
+                    transform: translate(4vw, -0.5rem);
+                }
+            }
+            img {
+                position: absolute;
+                height: 16vw;
+                transform: translate(-5vw, -1.5vw);
+
+                @media only screen and (max-width: $desktop) {
+                    height: 13vw;
+                    transform: translate(-6vw, -1.5vw);
+                }
+                @media only screen and (max-width: $mobile) {
+                    height: 6rem;
+                }
+            }
+            p {
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-end;
+                font-family: $heading-font;
+                font-size: 1.5rem;
+                color: black;
+                margin: 0.5rem 1rem;
+                
+                @media only screen and (max-width: $desktop) {
+                    font-size: 1rem;
+                }
+                @media only screen and (max-width: $mobile) {
+                    margin-bottom: 0.1rem;
+                    align-items: center;
+                }
+            }
+        }
+        .green {
+            background-color: $accent-color-1;
+        }
+        .pink {
+            background-color: $primary-color;
+        }
+        .orange {
+            background-color: $secondary-color;
+        }
+        .small {
+            img {
+                position: absolute;
+                height: 12vw;
+                transform: translate(-5vw, -1vw);
+
+                @media only screen and (max-width: $desktop) {
+                    height: 10vw;
+                }
+                @media only screen and (max-width: $mobile) {
+                    height: 4.5rem;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: $mobile) {
+        .connect {
+            margin-top: 0;
+        }
+    }
+}

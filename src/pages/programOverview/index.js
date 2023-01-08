@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../../components/navbar';
-import Landing from '../../components/landing';
+import Tools from '../../components/tools';
+import Mentors from '../../components/mentors';
 import Footer from '../../components/footer';
 import './styles.scss'
 
@@ -8,6 +9,8 @@ function ProgramOverview() {
   return (
     <div>
       <Navbar />
+      <Tools />
+      <Mentors />
       <Footer />
     </div>
   )
