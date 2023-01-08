@@ -59,12 +59,12 @@ function Navbar() {
                 className='mobile-hamburger'
               />
             </div>
-            <div className="middle">
-              <a href='/'>Home</a>
-            </div>
-            <div className="middle">
-              <a href='/program-overview'>Program Overview</a>
-            </div>
+            <a href='/' className="middle">
+              <p>Home</p>
+            </a>
+            <a href='/program-overview' className="middle">
+              <p>Program Overview</p>
+            </a>
             <div className="bottom">
               <a href="https://forms.gle/2bnSgXW4Usddx6JP6" target='_blank' className="button">
                 <p>APPLY</p>
