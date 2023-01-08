@@ -1,0 +1,125 @@
+@import '../../styles/base.scss';
+
+.faq-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign {
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+}
+.textbox {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.content {
+  width: 66vw;
+}
+.faq-title{
+  h1 {
+    font-family: $heading-font;
+  }
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  width: 80vw;
+  margin-bottom: 6vw;
+}
+
+.faq-accordian {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+}
+
+.accordian-cell{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+}
+
+.accordian-header{
+  font-family: $heading-font;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+  
+  h4 {
+    margin: 4px;
+  }
+  .norm {
+    height: 10vw;
+    margin-bottom: 4vw;
+  }
+  .long {
+    margin: 4vw;
+    margin-bottom: 3vw;
+  }
+  
+}
+
+
+
+.accordian-body{
+  font-family: $p-font;
+  margin: auto 1vw 4vw 1vw;
+}
+
+.divider {
+  width: 80vw;
+  height: 2px;
+  color: #292929;
+  background-color: #292929;
+  margin-bottom: 2vw;
+}
+
+// Mobile + 1
+@media (min-width: 601px) {
+  .faq-title {
+    margin-bottom: 3vw;
+
+    h1 {
+      font-size: clamp(4rem, 5vw, 10rem); 
+      font-weight: 100;
+    }
+  }
+
+  .accordian-header {
+    margin-bottom: 2vw;
+    h4 {
+      font-size: clamp(1.4rem, 1.8vw, 4rem);
+      font-weight: 100;
+    }
+    .norm {
+      height: 10vw;
+      margin-bottom: 3vw;
+    }
+    .long {
+      margin: 4vw;
+      margin-bottom: 3vw;
+    }
+  }
+  .accordian-body{
+    p {
+      font-family: $p-font;
+      font-size: clamp(1rem, 1.16vw, 1.6vw);
+    }
+    
+    margin: auto 0.28vw 3vw 0.28vw;
+    .content {
+      .para-1 {
+        margin-bottom: 1vw;
+      }
+    }
+    
+  }
+}
