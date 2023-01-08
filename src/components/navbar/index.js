@@ -66,10 +66,10 @@ function Navbar() {
               <a href='/program-overview'>Program Overview</a>
             </div>
             <div className="bottom">
-              <div className="button">
+              <a href="https://forms.gle/2bnSgXW4Usddx6JP6" target='_blank' className="button">
                 <p>APPLY</p>
                 <img src={Star} alt="" />
-              </div>
+              </a>
             </div>
           </div>
         )}
