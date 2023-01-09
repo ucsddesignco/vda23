@@ -230,8 +230,16 @@
     }
   }
 
+  .accordian-cell{
+    display: flex;
+    flex-direction: column;
+    width: 84vw;
+    padding-top: 3.6vw;
+    padding-bottom: 2vw;
+  }
+
   .accordian-header {
-    margin-bottom: 2vw;
+    margin-bottom: 2.5vw;
     h4 {
       font-size: clamp(1.4rem, 1.8vw, 4rem);
       font-weight: 100;
