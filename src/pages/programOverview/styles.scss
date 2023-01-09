@@ -49,12 +49,7 @@
         text-align: right;
         justify-content: flex-end;
         position: relative;
-        > img {
-            width: 70%;
-            position: absolute;
-            left: -27%;
-            top: -420px;
-        }
+        
         &-desc {
             width: 50%;
             display: flex;

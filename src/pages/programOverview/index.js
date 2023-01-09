@@ -7,7 +7,7 @@ import Tools from '../../components/tools';
 import Mentors from '../../components/mentors';
 import Footer from '../../components/footer';
 
-import ProgramIllustration from "../../assets/images/program/program-illustration.svg";
+import ProgramIllustration from "../../assets/images/program/program-illustration.png";
 import Star from "../../assets/images/program/star.svg";
 
 function ProgramOverview() {
@@ -23,8 +23,9 @@ function ProgramOverview() {
           <p>Throughout 12 weeks, apprentices will work through 3 phases: Short Exercises, Breadth, and Branding. The final phase will include a brand project that you can include in your portfolio, especially if you are an aspiring graphic/visual/brand designer. Most of the assignments are largely individual, but the final project can be done collaboratively.</p>
         </div>
       </header>
+      <img src={ProgramIllustration} alt="Program Illustration"/>
       <section className="schedule">
-        <img src={ProgramIllustration} alt="Program Illustration"/>
+        
         <div className="schedule-desc">
           <h2>Meetings & Prompts</h2>
           <p>All-hands meetings will take place in-person on Thursdays @ 6:30pm. The majority of the assignments can be done remotely, but we will teach how to use different design software during in-person all-hands meetings while reserving time for critiques & work sessions.</p>

@@ -4,8 +4,6 @@ import './styles.scss'
 import { MentorsList } from '../MentorsList'
 
 import Cross from '../../assets/images/home/black-cross.svg'
-import Profile from '../../assets/images/modal/Megan.png'
-import Symbol from '../../assets/images/program/symbol1.png'
 
 function Modal(props) {
     const idx = props.index;
