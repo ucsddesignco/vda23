@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import "./styles.scss";
 
-import icon from "../../assets/images/faq/+.png"
+import x from "../../assets/images/faq/+.png";
+import plus from "../../assets/images/faq/x.png";
+import bulletpoint from "../../assets/images/faq/tablebullet.png";
+import check from '../../assets/images/faq/check.png';
 
 
 function FAQ() {
@@ -42,10 +45,10 @@ function FAQ() {
         <h1>FAQ</h1>
       </div>
       <div className="faq-accordian">
-        <div className="accordian-cell">
-          <div className="accordian-header norm" onClick={handleOpen1}>
-            <h4>Who can apply?</h4>
-            <div className="sign">{show1 ? 'x' : '+'}</div>
+        <div className="accordian-cell" onClick={handleOpen1}>
+          <div className="accordian-header norm">
+            <h4 className="one">Who can apply?</h4>
+            <div className="sign">{show1 ? <img src={plus} className="signs"/> : <img src={x} className="signs" /> }</div>
           </div>
           {show1 && (
             <div className="accordian-body">
@@ -56,11 +59,10 @@ function FAQ() {
           )}
         </div>
         <div className="divider"></div>
-        <div className="accordian-cell">
-          <div className="accordian-header norm" onClick={handleOpen2}>
-            <h4>What is the time commitment?</h4>
-            <div className="sign">{show2 ? 'x' : '+'}</div>
-          </div>
+        <div className="accordian-cell"onClick={handleOpen2}>
+          <div className="accordian-header norm">
+            <h4 className="one">What is the time commitment?</h4>
+            <div className="sign">{show2 ? <img src={plus} className="signs"/> : <img src={x} className="signs" /> }</div>          </div>
           {show2 && (
             <div className="accordian-body">
               <div className="textbox">
@@ -71,11 +73,10 @@ function FAQ() {
           )}
         </div>
         <div className="divider"></div>
-        <div className="accordian-cell">
-          <div className="accordian-header long" onClick={handleOpen3}>
-            <h4>How many students will be accepted?</h4>
-            <div className="sign">{show3 ? 'x' : '+'}</div>
-          </div>
+        <div className="accordian-cell" onClick={handleOpen3}>
+          <div className="accordian-header long">
+            <h4 className="two">How many students will be accepted?</h4>
+            <div className="sign">{show3 ? <img src={plus} className="signs"/> : <img src={x} className="signs" /> }</div>          </div>
           {show3 && (
             <div className="accordian-body">
               <div className="textbox">
@@ -85,11 +86,10 @@ function FAQ() {
           )}
         </div>
         <div className="divider"></div>
-        <div className="accordian-cell">
-          <div className="accordian-header long" onClick={handleOpen4}>
-            <h4>How will apprentices be admitted?</h4>
-            <div className="sign">{show4 ? 'x' : '+'}</div>
-          </div>
+        <div className="accordian-cell" onClick={handleOpen4}>
+          <div className="accordian-header long">
+            <h4 className="two">How will apprentices be admitted?</h4>
+            <div className="sign">{show4 ? <img src={plus} className="signs"/> : <img src={x} className="signs" /> }</div>          </div>
           {show4 && (
             <div className="accordian-body">
               <div className="textbox">
@@ -99,27 +99,149 @@ function FAQ() {
           )}
         </div>
         <div className="divider"></div>
-        <div className="accordian-cell">
-          <div className="accordian-header long" onClick={handleOpen5}>
-            <h4>What happens if I don’t get into VDA?</h4>
-            <div className="sign">{show5 ? 'x' : '+'}</div>
+        <div className="accordian-cell" onClick={handleOpen5}>
+          <div className="accordian-header long">
+            <h4 className="two">What happens if I don’t get into VDA?</h4>
+            <div className="sign">{show5 ? <img src={plus} className="signs"/> : <img src={x} className="signs" /> }</div>         
           </div>
           {show5 && (
             <div className="accordian-body">
               <div className="textbox">
                 <p className="content">If you do not get into VDA, please don’t be discouraged! We will make our prompt list publicly available on this website if you want to follow along.</p>
-                <table-mobile />
-                <table-desktop />
+                <div className="tablemobile">
+                  <div className="tableheadmobile">
+                    <h5>What you will get access to</h5>
+                  </div>  
+                  <div className="vdaheadmobile">
+                    <h5>VDA Apprentices</h5>
+                  </div>
+                  <div className="vdacontmobile">
+                    <div className="cell one">
+                      <img src={bulletpoint} />
+                      <p>Assignment prompts</p>
+                    </div>
+                    <div className="cell two">
+                      <img src={bulletpoint} />
+                      <p>Online resources/tutorials (on the VDA website)</p>
+                    </div>
+                    <div className="cell three">
+                      <img src={bulletpoint} />
+                      <p>In-person all-hands meetings (tutorials, critique sessions, work sessions)</p>
+                    </div>
+                    <div className="cell four">
+                      <img src={bulletpoint} />
+                      <p>VDA Discord community with the opportunity to get feedback from VDA organizers & peers</p>
+                    </div>
+                    <div className="cell five">
+                      <img src={bulletpoint} />
+                      <p>Opportunity to get paired with 1- 3 other accountability buddies</p>
+                    </div>
+                    <div className="cell final">
+                      <img src={bulletpoint} />
+                      <p>Featured in the final showcase/VDA website</p>
+                    </div>
+                  </div>
+                  <div className="nonvdaheadmobile">
+                    <h5>Non-VDA Students</h5>
+                  </div>
+                  <div className="nonvdacontmobile">
+                    <div className="cell one">
+                      <img src={bulletpoint} />
+                      <p>Assignment prompts</p>
+                    </div>
+                    <div className="cell final two">
+                      <img src={bulletpoint} />
+                      <p>Online resources/tutorials (on the VDA website)</p>
+                    </div>
+                  </div>
+                <div>
               </div>
+            <div>
+            </div>
+              </div>
+              <div className="gridwrap">
+                <div class="grid-container">
+                  <div className="columnone">
+                    <div class="grid-item one">
+                      <h5>What you will get access to</h5>
+                    </div>
+                    <div class="grid-item">
+                      <p>Assignment Prompts</p>
+                    </div>
+                    <div class="grid-item">
+                      <p>Online resources/tutorials (on the VDA website)</p>
+                    </div>
+                    <div class="grid-item">
+                      <p>In-person all-hands meetings (tutorials, critique sessions, work sessions)</p>
+                    </div>
+                    <div class="grid-item">
+                      <p>VDA Discord community with the opportunity to get feedback from VDA organizers & peers</p>
+                    </div>
+                    <div class="grid-item">
+                      <p>Opportunity to get paired with 1- 3 other accountability buddies</p>
+                    </div>
+                    <div class="grid-item">
+                      <p>Featured in the final showcase/VDA website</p>
+                    </div>
+                  </div>
+                  <div className="columntwo">
+                    <div class="grid-item two">
+                      <h5>VDA Apprentices</h5>
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                  </div>
+                  <div className="columnthree">
+                    <div class="grid-item three">
+                      <h5>Non-VDA Students</h5>
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+                      <img src={check} />
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                    <div class="grid-item">
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             </div>
           )}
         </div>
         <div className="divider"></div>
-        <div className="accordian-cell">
-          <div className="accordian-header norm" onClick={handleOpen6}>
-            <h4>When is the application due?</h4>
-            <div className="sign">{show6 ? 'x' : '+'}</div>
-          </div>
+        <div className="accordian-cell" onClick={handleOpen6}>
+          <div className="accordian-header norm">
+            <h4 className="one">When is the application due?</h4>
+            <div className="sign">{show6 ? <img src={plus} className="signs"/> : <img src={x} className="signs" /> }</div>          </div>
           {show6 && (
             <div className="accordian-body">
               <div className="textbox">
@@ -129,6 +251,7 @@ function FAQ() {
             
           )}
         </div>
+        <div className="divider"></div>
       </div>
     </div>
 

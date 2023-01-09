@@ -1,5 +1,5 @@
 @import '../../styles/base.scss';
-
+  
 .faq-page{
   display: flex;
   flex-direction: column;
@@ -10,15 +10,23 @@
   font-weight: bold;
   font-size: 30px;
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signs {
+  margin-left: 20px;
+  width: 10px;
+  height: auto;
 }
 .textbox {
   display: flex;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
 }
 
 .content {
-  width: 66vw;
+  width: 82vw;
 }
 .faq-title{
   h1 {
@@ -29,7 +37,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-  width: 80vw;
+  width: 84vw;
   margin-bottom: 6vw;
 }
 
@@ -43,7 +51,9 @@
 .accordian-cell{
   display: flex;
   flex-direction: column;
-  width: 80vw;
+  width: 84vw;
+  padding-top: 5vw;
+  padding-bottom: 3.6vw;
 }
 
 .accordian-header{
@@ -51,14 +61,21 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 4vw;
+  margin-bottom: 0.8vw;
   
   h4 {
-    margin: 4px;
+    margin-left: 4px;
+    vertical-align: middle;
+    
   }
+  .one {
+    padding-top: 0vw;
+  }
+
   .norm {
-    height: 10vw;
-    margin-bottom: 4vw;
+    height: 4vw;
+    margin-bottom: 2vw;
+    
   }
   .long {
     margin: 4vw;
@@ -71,16 +88,110 @@
 
 .accordian-body{
   font-family: $p-font;
-  margin: auto 1vw 4vw 1vw;
+  margin: 4vw 2vw 2vw 1vw;
 }
 
 .divider {
-  width: 80vw;
+  width: 84vw;
   height: 2px;
   color: #292929;
   background-color: #292929;
-  margin-bottom: 2vw;
+  margin: 0 0 0 0;
 }
+
+//Table
+
+.tablemobile {
+  margin-top: 2vw;
+  margin-bottom: 4vw;
+  width: 84vw;
+  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .tableheadmobile {
+    font-family: $heading-font;
+    background-color: $primary-color;
+    font-size: 1.04rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 14vw;
+    width: 84vw;
+    border-bottom: 0.5px solid black;
+  }
+  .vdacontmobile {
+    width: 78vw;
+
+  }
+  .vdaheadmobile {
+    font-family: $heading-font;
+    background-color: $accent-color-1;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8.4vw;
+    width: 84vw;
+    border-top: 0.5px solid black
+  }
+  
+  .nonvdaheadmobile {
+    font-family: $heading-font;
+    background-color: $secondary-color;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8.8vw;
+    width: 84vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 2vw;
+  }
+  .cell {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.8vw;
+    img {
+      height: 14px;
+      width: auto;
+      padding-top: 4px;
+      padding-right: 4px;
+    }
+    p {
+      padding-left: 4px;
+      font-family: $p-font;
+    }
+  }
+  
+}
+.nonvdacontmobile {
+  width: 78vw;
+}
+
+.cell.one {
+  margin-top: 4vw;
+}
+.cell.final {
+  margin-bottom: 4vw;
+}
+.cell.final.two {
+  margin-bottom: 5.2vw;
+}
+
+.content.para-1 {
+  margin-bottom: 2.8vw;
+}
+
+.gridwrap {
+  display: none;
+}
+
 
 // Mobile + 1
 @media (min-width: 601px) {
@@ -114,7 +225,7 @@
       font-size: clamp(1rem, 1.16vw, 1.6vw);
     }
     
-    margin: auto 0.28vw 3vw 0.28vw;
+    margin: auto 0.28vw 2.4vw 0.28vw;
     .content {
       .para-1 {
         margin-bottom: 1vw;
@@ -122,4 +233,116 @@
     }
     
   }
+
+  .content.para-1 {
+    margin-bottom: 2vw;
+  }
+
+  .divider {
+  }
+
+  .textbox {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .content {
+    width: 68vw;
+  }
+
+  .tablemobile {
+    display: none;
+  }
+
+  .gridwrap {
+    display: inline;
+    width: 84vw;
+    margin-top: 1.6vw;
+  }
+  .grid-container {
+    display: flex;
+    width: 68vw;
+    margin-left: 0.1vw;
+
+
+    .grid-item {
+      height: 4vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        height: 1.8vw;
+        width: 1.8vw;
+      }
+      border: 1px solid grey;
+      h5 {
+        font-family: $heading-font;
+      }
+      p {
+        font-family: $p-font;
+      }
+    }
+
+    .columnone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 32vw;
+      margin-left: 0.02vw;
+      .grid-item {
+        width: 32.2vw;
+        h5 {
+          margin-left: 2.4vw;
+          width: 26vw;
+          font-size: clamp(0.6rem, 1.2vw, 2rem);
+        }
+        p {
+          font-size: clamp(0.4rem, 1vw, 1.2rem);
+          margin-left: 2.4vw;
+          width: 26vw;
+        }
+      }
+    }
+
+    .columntwo {
+      
+      width: 18vw;
+      .grid-item {
+        width: 18vw;
+        align-items: center;
+        justify-content: center;
+        h5 {
+          font-size: clamp(0.6rem, 1.2vw, 2rem);
+        }
+        
+      }
+    }
+    .columnthree {
+      width: 18vw;
+      .grid-item {
+        width: 18vw;
+        align-items: center;
+        justify-content: center;  
+        h5 {
+          font-size: clamp(0.6rem, 1.2vw, 2rem);
+        }
+      }
+    }
+    
+  }
+
+  .grid-item.one {
+    background-color: $primary-color;
+    color: black;
+  }
+  .grid-item.two {
+    background-color: $accent-color-1;
+    color: black;
+  }
+  .grid-item.three {  
+    background-color: $secondary-color;
+    color: black;
+  }
+
+
 }

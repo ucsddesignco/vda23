@@ -1,0 +1,199 @@
+@import '../../styles/base.scss';
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 84vw;
+  height: 40vw;
+
+  h1{
+    font-size: clamp(0.6rem, 140px, 2rem); 
+    font-family: $heading-font;
+  }
+  
+
+  .img {
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    height: 260px;
+    width: auto;
+  }
+}
+
+
+.threebox{
+  width: 84vw;
+  margin-top: -3vw;
+
+  .shapes {
+    width: clamp(3rem, 20vw, 5rem);
+  }
+  .shapes.one{
+    margin-bottom: 4vw;
+  }
+
+  .shapes.two{
+    margin-bottom: 1vw;
+  }
+  .shapes.three{
+    margin-bottom: 4vw;
+  }
+
+  h4{
+    font-family: $heading-font;
+    font-weight: 300;
+    margin-bottom: 2vw;
+  }
+
+  p {
+    font-family: $p-font;
+  }
+
+  .box {
+    margin-bottom: 4vw;
+  }
+
+  
+}
+.buttoncont {
+  width: 84vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-top: 6vw;
+  margin-bottom: 10vw;
+  .button {
+    background-color: $accent-color-1;
+    width: 112px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px 14px 8px 14px;
+    text-decoration: none;
+
+    align-items: center;
+    .text {
+      color: $background-color;
+      font-family: $button-font;
+      font-size: 22px;
+    }
+  }
+  .buttonstar {
+    height: 24px;
+    width: auto;
+  }
+}
+  
+
+@media (min-width: 601px) {
+
+  .title {
+    h1 {
+      font-family: $heading-font;
+      font-weight: 100;
+      font-size: clamp(2rem, 5.2vw, 10rem);
+      height: 8vw;
+    }
+    height: 12vw;
+    margin-top: 3.4vw;
+    width: 84vw;
+  }
+  .threebox {
+    width: 84vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0vw;
+  }
+  .box {
+    width: 26.6vw;
+    height: auto;
+    margin-bottom: 1vw;
+    
+    h4 {
+      margin-bottom: 1vw;
+    }
+
+    .shapes.one {
+      height: 2.8vw;
+      width: auto;
+      margin-top: 1.2vw;
+      margin-bottom: 1.4vw;
+    }
+
+    .shapes.two {
+      height: 4.6vw;
+      width: auto;
+      margin-top: 0.54vw;
+      margin-bottom: 0.22vw;
+    }
+
+    .shapes.three {
+      height: 3.6vw;
+      width: auto;
+      margin-top: 0.8vw;
+      margin-bottom: 0.8vw;
+    }
+  }
+
+  .img {
+    display: none;
+  } 
+  .buttoncont2 {
+    height: 3.8vw;
+    width: 13.8vw;
+    display: flex;
+    justify-content: center;
+  }
+  .buttoncont {
+    width: 84vw;
+    height: 6vw;
+    margin-top: 0vw;
+    margin-bottom: 4.2vw;
+
+    .button {
+      margin-left: 16px;
+      height: 3.8vw;
+      width: 13.8vw;
+      text-decoration: none;
+      .text {
+        font-size: 2.8vw;
+      }
+      .buttonstar {
+        height: 2.6vw;
+        width: auto;
+      }
+      
+    }
+
+    .button:hover {
+      size: 75%;
+      text-decoration: none;
+      .text {
+        font-size: 2.6vw;
+      }
+      .buttonstar {
+        height: 2.4vw;
+        width: auto;
+      }
+      
+    }
+
+    .button:active {
+      background-color: #008437;
+    }
+
+  }
+
+}
