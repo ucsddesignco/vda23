@@ -6,7 +6,7 @@ import './styles.scss';
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
       <Navbar />
       <Landing />
       <Footer />

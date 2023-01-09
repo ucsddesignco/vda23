@@ -1,0 +1,196 @@
+@import '../../styles/base.scss';
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    width: 65vw;
+
+    @media only screen and (max-width: $desktop) {
+        width: 82vw;
+    }
+    .pink {
+        display: flex;
+        background-color: $primary-color;
+        border: 1px solid black;
+        padding: 0.75rem 0;
+
+        p {
+            font-size: 2rem;
+            font-family: $heading-font;
+            color: black;
+            margin: auto;
+
+            @media only screen and (max-width: $desktop) {
+                font-size: 1.5rem;
+            }
+            @media only screen and (max-width: $mobile) {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .block {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        .orange {
+            border: 1px solid black;
+            background-color: orange;
+            color: black;
+            padding: 1.25rem;
+
+            h3 {
+                font-size: 2rem;
+                font-family: $heading-font;
+                margin-bottom: 1rem;
+
+                @media only screen and (max-width: $desktop) {
+                    font-size: 1.5rem;
+                }
+                @media only screen and (max-width: $mobile) {
+                    font-size: 1.1rem;
+                }
+            }
+            p {
+                font-size: 1rem;
+                font-family: $p-font;
+
+                @media only screen and (max-width: $mobile) {
+                    font-size: 0.9rem;
+                }
+            }
+        }
+        .black {
+            border-right: 1px solid $divider-color;
+            border-top: 1px solid $divider-color;
+            color: white;
+            padding: 2rem;
+            @media only screen and (max-width: $desktop) {
+                padding: 1.25rem;
+            }
+
+            h4 {
+                font-size: 1.1rem;
+                font-family: $heading-font;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+
+                @media only screen and (max-width: $mobile) {
+                    font-size: 0.9rem;
+                }
+            }
+            h5 {
+                font-size: 1rem;
+                font-family: $heading-font;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+                @media only screen and (max-width: $mobile) {
+                    font-size: 0.8rem;
+                }
+            }
+            .due {
+                color: $accent-color-1;
+            }
+            .bullet {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 1rem;
+
+                img {
+                    object-fit: contain;
+                    height: 20px;
+                    transform: translateY(0.1rem);
+                }
+                p {
+                    margin: 0;
+                    margin-left: 1rem;
+                    @media only screen and (max-width: $mobile) {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            p {
+                font-size: 1rem;
+                font-family: $p-font;
+                margin: 0 0 2rem;
+            }
+        }
+        .first {
+            border-top: none;
+        }
+        .lastblack {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+
+            .black {
+                border-top: 1px solid $divider-color;
+                border-right: 1px solid $divider-color;
+                color: white;
+                padding: 2rem;
+
+                @media only screen and (max-width: $desktop) {
+                    padding-left: 1.25rem;
+                }
+                h4 {
+                    font-size: 1.1rem;
+                    font-family: $heading-font;
+                    margin-bottom: 1rem;
+                    line-height: 1.2;
+                    margin: 0;
+
+                    @media only screen and (max-width: $mobile) {
+                        font-size: 0.9rem;
+                    }
+                }
+                h5 {
+                    font-size: 1rem;
+                    font-family: $heading-font;
+                    margin-bottom: 1rem;
+                    line-height: 1.2;
+                }
+                .due {
+                    color: $accent-color-1;
+                }
+                .bullet {
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: 1rem;
+    
+                    img {
+                        object-fit: contain;
+                        height: 20px;
+                        transform: translateY(0.1rem);
+                    }
+                    p {
+                        margin: 0;
+                        margin-left: 1rem;
+                    }
+                }
+                p {
+                    font-size: 1rem;
+                    font-family: $p-font;
+                    margin: 0 0 2rem;
+                }
+            }
+            .green {
+                display: flex;
+                background-color: $accent-color-1;
+                border: 1px solid black;
+
+                h3 {
+                    color: black;
+                    font-family: $heading-font;
+                    font-size: 1.5rem;
+                    margin: auto 2rem;
+
+                    @media only screen and (max-width: $desktop) {
+                        margin: auto 1.25rem;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

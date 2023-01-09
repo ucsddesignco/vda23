@@ -69,10 +69,6 @@
                 transform: scale(0.9);
             }
         }
-        
-        .active {
-            font-family: $title-font;
-        }
     }
     .logo {
         object-fit: contain;
@@ -130,6 +126,7 @@
                     font-size: 1.5rem;
                     color: white;
                     text-decoration: none;
+                    font-family: $heading-font;
                 }
             }
             .bottom {
