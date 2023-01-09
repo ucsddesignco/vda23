@@ -105,7 +105,6 @@
   margin-top: 2vw;
   margin-bottom: 4vw;
   width: 84vw;
-  border: 1px solid grey;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,10 +119,23 @@
     justify-content: center;
     height: 14vw;
     width: 84vw;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     border-bottom: 0.5px solid black;
+  }
+  .contcontain {
+    width: 83.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.2vw;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
   }
   .vdacontmobile {
     width: 78vw;
+    
 
   }
   .vdaheadmobile {
@@ -136,7 +148,11 @@
     justify-content: center;
     height: 8.4vw;
     width: 84vw;
-    border-top: 0.5px solid black
+    border-top: 0.5px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+
   }
   
   .nonvdaheadmobile {
@@ -149,9 +165,8 @@
     justify-content: center;
     height: 8.8vw;
     width: 84vw;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin-top: 2vw;
+    border: 1px solid black;
+    margin-top: -0.8vw;
   }
   .cell {
     display: flex;
@@ -172,6 +187,17 @@
 }
 .nonvdacontmobile {
   width: 78vw;
+  
+}
+.contcontain2 {
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+  
 }
 
 .cell.one {

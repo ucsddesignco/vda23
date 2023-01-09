@@ -115,43 +115,47 @@ function FAQ() {
                   <div className="vdaheadmobile">
                     <h5>VDA Apprentices</h5>
                   </div>
-                  <div className="vdacontmobile">
-                    <div className="cell one">
-                      <img src={bulletpoint} />
-                      <p>Assignment prompts</p>
-                    </div>
-                    <div className="cell two">
-                      <img src={bulletpoint} />
-                      <p>Online resources/tutorials (on the VDA website)</p>
-                    </div>
-                    <div className="cell three">
-                      <img src={bulletpoint} />
-                      <p>In-person all-hands meetings (tutorials, critique sessions, work sessions)</p>
-                    </div>
-                    <div className="cell four">
-                      <img src={bulletpoint} />
-                      <p>VDA Discord community with the opportunity to get feedback from VDA organizers & peers</p>
-                    </div>
-                    <div className="cell five">
-                      <img src={bulletpoint} />
-                      <p>Opportunity to get paired with 1- 3 other accountability buddies</p>
-                    </div>
-                    <div className="cell final">
-                      <img src={bulletpoint} />
-                      <p>Featured in the final showcase/VDA website</p>
+                  <div className="contcontain">
+                    <div className="vdacontmobile">
+                      <div className="cell one">
+                        <img src={bulletpoint} />
+                        <p>Assignment prompts</p>
+                      </div>
+                      <div className="cell two">
+                        <img src={bulletpoint} />
+                        <p>Online resources/tutorials (on the VDA website)</p>
+                      </div>
+                      <div className="cell three">
+                        <img src={bulletpoint} />
+                        <p>In-person all-hands meetings (tutorials, critique sessions, work sessions)</p>
+                      </div>
+                      <div className="cell four">
+                        <img src={bulletpoint} />
+                        <p>VDA Discord community with the opportunity to get feedback from VDA organizers & peers</p>
+                      </div>
+                      <div className="cell five">
+                        <img src={bulletpoint} />
+                        <p>Opportunity to get paired with 1- 3 other accountability buddies</p>
+                      </div>
+                      <div className="cell final">
+                        <img src={bulletpoint} />
+                        <p>Featured in the final showcase/VDA website</p>
+                      </div>
                     </div>
                   </div>
                   <div className="nonvdaheadmobile">
                     <h5>Non-VDA Students</h5>
                   </div>
-                  <div className="nonvdacontmobile">
-                    <div className="cell one">
-                      <img src={bulletpoint} />
-                      <p>Assignment prompts</p>
-                    </div>
-                    <div className="cell final two">
-                      <img src={bulletpoint} />
-                      <p>Online resources/tutorials (on the VDA website)</p>
+                  <div className="contcontain2">
+                    <div className="nonvdacontmobile">
+                      <div className="cell one">
+                        <img src={bulletpoint} />
+                        <p>Assignment prompts</p>
+                      </div>
+                      <div className="cell final two">
+                        <img src={bulletpoint} />
+                        <p>Online resources/tutorials (on the VDA website)</p>
+                      </div>
                     </div>
                   </div>
                 <div>
