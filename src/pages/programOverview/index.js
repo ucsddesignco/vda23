@@ -7,7 +7,7 @@ import Tools from '../../components/tools';
 import Mentors from '../../components/mentors';
 import Footer from '../../components/footer';
 
-import ProgramIllustration from "../../assets/images/program/program-illustration.png";
+import ProgramIllustration from "../../assets/images/program/program-illustration.svg";
 import Star from "../../assets/images/program/star.svg";
 
 function ProgramOverview() {
@@ -23,7 +23,6 @@ function ProgramOverview() {
           <p>Throughout 12 weeks, apprentices will work through 3 phases: Short Exercises, Breadth, and Branding. The final phase will include a brand project that you can include in your portfolio, especially if you are an aspiring graphic/visual/brand designer. Most of the assignments are largely individual, but the final project can be done collaboratively.</p>
         </div>
       </header>
-      <img src={ProgramIllustration} alt="Program Illustration"/>
       <section className="schedule">
         
         <div className="schedule-desc">
@@ -32,6 +31,7 @@ function ProgramOverview() {
           <p className="schedule-desc-prompt">To view the full description of prompts, deadlines, and what each all-hands meeting will consist of:</p>
           <a href="https://docs.google.com/document/d/1-4NKe8hzJQHk2rPEHwm2LjtCA0BsY9IGj0udLRmt2d8/edit?usp=sharing" target='_blank'>View Full Timeline<img src={Star} alt="star"/></a>
         </div>
+        <img src={ProgramIllustration} alt="Program Illustration"/>
       </section>
       <Timeline />
       <Tools />
