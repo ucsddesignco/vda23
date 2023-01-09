@@ -1,6 +1,8 @@
 import React from 'react'
 import './styles.scss'
 
+import Timeline from '../../components/timeline';
+
 import ProgramIllustration from "../../assets/images/program-illustration.svg";
 import Star from "../../assets/images/star.svg";
 
@@ -24,6 +26,7 @@ function ProgramOverview() {
           <a href="https://docs.google.com/document/d/1-4NKe8hzJQHk2rPEHwm2LjtCA0BsY9IGj0udLRmt2d8/edit?usp=sharing">View Full Timeline<img src={Star} alt="star"/></a>
         </div>
       </section>
+      <Timeline />
     </div>
   )
 }
