@@ -53,32 +53,40 @@
             @media only screen and (max-width: $mobile) {
                 height: 12vh;
             }
-            .profile {
-                object-fit: contain;
-                height: 8vw;
-                border-right: solid black 2px;
+            .profile-container {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
 
-                @media only screen and (max-width: $desktop) {
-                    height: 10vw;
+                
+                .profile {
+                    object-fit: contain;
+                    height: 8vw;
+                    border-right: solid black 2px;
+    
+                    @media only screen and (max-width: $desktop) {
+                        height: 10vw;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        height: 12vh;
+                    }
                 }
-                @media only screen and (max-width: $mobile) {
-                    height: 12vh;
-                }
-            }
-            h2 {
-                color: black;
-                font-family: $button-font;
-                font-size: 3vw;
-                margin: 0;
-                transform: translateY(0.2vw);
-
-                @media only screen and (max-width: $desktop) {
-                    font-size: 4vw;
-                    transform: translateY(0.3vw);
-                }
-                @media only screen and (max-width: $mobile) {
-                    font-size: 1.5rem;
-                    transform: translateY(0.3vh);
+                h2 {
+                    color: black;
+                    font-family: $button-font;
+                    font-size: 3vw;
+                    margin: 0 0 0 2.5rem;
+                    transform: translateY(0.2vw);
+    
+                    @media only screen and (max-width: $desktop) {
+                        font-size: 4vw;
+                        transform: translateY(0.3vw);
+                        margin-left: 2rem;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        font-size: 1.5rem;
+                        transform: translateY(0.3vh);
+                    }
                 }
             }
             .cross {
@@ -123,7 +131,7 @@
                     font-size: 1.75vw;
                 }
                 @media only screen and (max-width: $mobile) {
-                    font-size: 0.72rem;
+                    font-size: 0.85rem;
                 }
             }
             .text-small {
@@ -132,10 +140,17 @@
                     width: 70%;
                 }
                 @media only screen and (max-width: $mobile) {
-                    width: 60%;
+                    width: 100%;
                 }
             }
             
+        }
+        .small-text {
+            p {
+                @media only screen and (max-width: 480px) {
+                    font-size: 0.75rem;
+                }
+            }
         }
         .symbol {
             position: absolute;
@@ -148,9 +163,26 @@
                 height: 22vw;
             }
             @media only screen and (max-width: $mobile) {
-                height: 9rem;
-                right: 5vw;
-                bottom: 0;
+                height: 12rem;
+                right: -2.25vw;
+                bottom: -2rem;
+            }
+        }
+        .med {
+            @media only screen and (max-width: 480px) {
+                height: 10rem;
+                right: -2.25vw;
+                bottom: -2rem;
+            }
+        }
+        .sm {
+            @media only screen and (max-width: $mobile) {
+                height: 10rem;
+                right: -2.25vw;
+                bottom: -2rem;
+            }
+            @media only screen and (max-width: 480px) {
+                height: 8rem;
             }
         }
     }
