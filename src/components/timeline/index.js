@@ -21,7 +21,7 @@ function Timeline() {
                 <h4>Pre-A1: Intro Card Graphic – 1 day</h4>
                 <p>Due Fri, Jan 27 @ 11:59pm</p>
                 <h4>A1: Create a Logo – 1 week</h4>
-                <p>Due Fri, Feb 3 @ 11:59pm</p>
+                <p id="no-due">Due Fri, Feb 3 @ 11:59pm</p>
             </div>
             <div className="orange">
                 <h3>Week 2</h3>

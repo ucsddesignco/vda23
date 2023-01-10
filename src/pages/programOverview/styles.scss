@@ -75,7 +75,7 @@
             }
         }
         a {
-            margin-top: 36px;
+            margin-top: 28px;
             padding: 4px 4px;
             width: 450px;
             text-decoration: none;
@@ -88,7 +88,10 @@
             font-size: 2rem;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: center;
+            > img {
+                padding-left: 8px;
+            }
         }
     }
 }
@@ -111,10 +114,11 @@
                 padding: 40px 8vw;
             }
             &-desc {
-                width: calc(100%);
+                width: 100%;
                 padding: 20px 0;
                 > p {
-                    padding: 0 8vw 100px 8vw;
+                    padding: 0 8vw 60px 8vw;
+                    text-align: justify;
                 }
             }
             h1 {
@@ -131,9 +135,12 @@
             }
             &-desc {
                 width: 100%;
-                h2, p, p:first-of-type, a {
+                h2, p, p:first-of-type {
                     text-align: left;
                     width: 100%;
+                }
+                a {
+                    width: calc(100% - 8px);
                 }
             }
         }
@@ -145,24 +152,26 @@
         margin-top: 300px;
         > img {
             left: -19%;
-            top: -300px;
+            top: -340px;
         }
     }
 }
 
 @media only screen and (max-width: 580px) {
     .overview .schedule {
-        margin-top: 400px;
+        margin-top: 360px;
         > img {
             top: -320px;
         }
     }
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 500px) {
     .overview .schedule {
         > img {
-            top: -270px;
+            left: -26%;
+            top: -290px;
+            width: 70%;
         }
         a {
             font-size: 1.4rem;
