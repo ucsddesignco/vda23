@@ -49,7 +49,7 @@ function WhyApply() {
       </div>
       <div className="buttoncont">
         <div className="buttoncont2">
-          <a onClick={handleClick} className="button" href="https://forms.gle/2bnSgXW4Usddx6JP6" target='_blank'>
+          <a onClick={handleClick} className="applybutton shrink-on-hover" href="https://forms.gle/2bnSgXW4Usddx6JP6" target='_blank'>
             <h4 className="text">APPLY</h4>
             <img src={buttonstar} className="buttonstar" />
           </a>
