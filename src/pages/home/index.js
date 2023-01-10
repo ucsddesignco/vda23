@@ -4,6 +4,7 @@ import Landing from '../../components/landing';
 import Footer from '../../components/footer';
 import WhyApply from '../../components/whyapply';
 import FAQ from '../../components/faq';
+import FAQNEW from '../../components/faqnew';
 
 import './styles.scss';
 
@@ -13,7 +14,7 @@ function Home() {
       <Navbar />
       <Landing />
       <WhyApply />
-      <FAQ />
+      <FAQNEW />
       <Footer />
     </div>
   )

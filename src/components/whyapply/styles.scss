@@ -18,6 +18,7 @@
   h1{
     font-size: clamp(0.6rem, 140px, 2rem); 
     font-family: $heading-font;
+    font-weight: 100;
   }
   
 
@@ -34,9 +35,21 @@
 .threebox{
   width: 84vw;
   margin-top: -3vw;
+  .shapesmobile.one {
+    margin-bottom: 2.8vw;
+  }
+  .shapesmobile.two {
+    margin-bottom: 1vw;
+  }
+  .shapesmobile.three {
+    margin-bottom: 2.8vw;
+  }
+
 
   .shapes {
     width: clamp(3rem, 20vw, 5rem);
+    display: none;
+    
   }
   .shapes.one{
     margin-bottom: 4vw;
@@ -53,6 +66,7 @@
     font-family: $heading-font;
     font-weight: 300;
     margin-bottom: 2vw;
+    font-size: 1.125rem;
   }
 
   p {
@@ -117,14 +131,24 @@
     margin-bottom: 0vw;
   }
   .box {
-    width: 26.6vw;
+    width: 26.2vw;
     height: auto;
     margin-bottom: 1vw;
+
+    p {
+      text-align: justify;
+    }
     
     h4 {
       margin-bottom: 1vw;
     }
+    .shapesmobile {
+      display: none;
+    }
 
+    .shapes {
+      display: block;
+    }
     .shapes.one {
       height: 2.8vw;
       width: auto;
@@ -173,6 +197,7 @@
       .buttonstar {
         height: 2.6vw;
         width: auto;
+        margin-left: 0.8vw;
       }
       
     }

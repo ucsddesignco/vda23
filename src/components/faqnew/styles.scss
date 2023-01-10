@@ -1,0 +1,24 @@
+@import '../../styles/base.scss';
+  
+.faq-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordian {
+  width: 84vw;
+}
+
+// Mobile + 1
+@media (min-width: 601px) {
+  .faq-title {
+    margin-bottom: 3vw;
+
+    h1 {
+      font-size: clamp(4rem, 5vw, 10rem); 
+      font-weight: 100;
+    }
+  }
+
+}

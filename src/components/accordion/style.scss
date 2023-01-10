@@ -1,0 +1,234 @@
+@import '../../styles/base.scss';
+
+.tablemobile {
+  h5 {
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  h4 {
+    font-family: $heading-font;
+    kerning: 0;
+    font-size: 1.125rem;
+    font-weight: 200;
+  }
+
+} 
+.contcontain3 {
+    width: 83.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+.none {
+  display: none !important;
+  height: 0px;
+  width: 0px;
+}
+.table.none {
+  width: 0px;
+  height: 0px;
+}
+.font {
+  font-family: $sub-font;
+}
+.link {
+  color: white;
+  font-family: $p-font;
+}
+
+.para1 {
+  margin-bottom: 1vw;
+}
+.faqs {
+    text-align: left;
+
+    .faq {
+      border-bottom: 2px solid #292929;
+      padding: 1.5rem 0 1.5rem 0;
+      cursor: pointer;
+
+      @media (max-width: $mobile) {
+        border-bottom: 1px solid #292929;
+      }
+
+      .faq-question {
+        position: relative;
+        font-size: 1.5rem;
+        padding-right: 100px;
+        font-family: $heading-font;
+        font-weight: 500;
+        p {
+          width: 78vw;
+        }
+      
+        transition: all 0.2s ease;
+      }
+      .faq-question::after {
+        content: "";
+        position: absolute;
+        background-image: url("../../assets/images/faq/icon-plus.svg");
+        top: 50%;
+        right: 0px;
+        transform: translateY(-50%);
+        width: 1rem;
+        height: 1rem;
+        transition: all 0.2s ease;
+      }
+      .faq-answer {
+        opacity: 0;
+        max-height: 0;
+        overflow-y: hidden;
+        transition: all 0.2s ease;
+        font-family: $p-font;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        padding-right: 8rem;
+      }
+    }
+    .faq.open {
+
+      .faq-question {
+        margin-bottom: 15px;
+      }
+      .faq-question::after {
+        transform: translateY(-50%) rotate(135deg);
+      }
+      .faq-answer {
+        max-height: 1000px;
+        opacity: 1;
+        margin-bottom: 0vw;
+      }
+    }
+
+    .grid-cont {
+      display: flex;
+      width: 68vw;
+      height: 30vw;
+      margin-left: 0.1vw;
+      margin-top: 1vw;
+  
+  
+      .grid-item {
+        height: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img {
+          height: 1.8vw;
+          width: 1.8vw;
+        }
+        outline: 1px solid grey;
+        h5 {
+          font-family: $heading-font;
+        }
+        p {
+          font-family: $p-font;
+        }
+      }
+  
+      .columnone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 32vw;
+        margin-left: 00vw;
+        .grid-item {
+          width: 32vw;
+          h5 {
+            margin-left: 2.4vw;
+            width: 26vw;
+            font-size: clamp(0.6rem, 1.2vw, 2rem);
+          }
+          p {
+            font-size: clamp(0.4rem, 1vw, 1.2rem);
+            margin-left: 2.4vw;
+            width: 26vw;
+          }
+        }
+      }
+  
+      .columntwo {
+        
+        width: 18vw;
+        .grid-item {
+          width: 18vw;
+          align-items: center;
+          justify-content: center;
+          h5 {
+            font-size: clamp(0.6rem, 1.2vw, 2rem);
+          }
+          
+        }
+      }
+      .columnthree {
+        width: 18vw;
+        .grid-item {
+          width: 18vw;
+          align-items: center;
+          justify-content: center;  
+          h5 {
+            font-size: clamp(0.6rem, 1.2vw, 2rem);
+          }
+        }
+      }
+      
+    }
+  
+    .grid-item.one {
+      width: 32.08vw;
+      outline: 1px solid black;
+      background-color: $primary-color;
+      color: black;
+    }
+    .grid-item.two {
+      width: 18.06vw;
+      outline: 1px solid black;
+      background-color: $accent-color-1;
+      color: black;
+    }
+    .grid-item.three { 
+      width: 18.06vw;
+      outline: 1px solid black; 
+      background-color: $secondary-color;
+      color: black;
+    }
+    .table {
+      padding-top: 1rem;
+    }
+
+
+  }
+
+  @media (max-width: 601px) {
+
+    #faq {
+      padding-top: 3.5rem; 
+    }
+    .textbody {
+      margin-right: 0vw;
+      width: 84vw;
+      overflow: hidden;
+      
+    }
+    .table {
+      overflow: hidden;
+      width: 84vw;
+    }
+    .faqs .faq .faq-question {
+      font-size: 1.5rem;
+    }
+    .faqs .faq .faq-answer {
+      font-size: 1rem;
+      overflow: hidden;
+      text-align: left;
+    }
+    #faq:target {
+      padding-top: calc(3.5rem + 70px);
+    }
+    .grid-cont {
+      display: none !important;
+    }
+  }
