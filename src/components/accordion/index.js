@@ -182,7 +182,7 @@ function Accordion() {
     {
       question: "When is the application due?",
       answer:
-        <p className="textbody">The application is due Saturday, January 14 @ 11:59pm PST. Applicants will receive an email about their application status by the end of Week 2 of WI23.</p>,
+        <p className="textbody">The application is due Sunday, January 15 @ 11:59pm PST. Applicants will receive an email about their application status by the end of Week 2 of WI23.</p>,
       open: false,
       table: 
         <div className="none"></div>,
