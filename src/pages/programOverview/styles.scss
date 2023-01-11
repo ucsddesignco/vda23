@@ -1,180 +1,185 @@
-@import '../../styles/base.scss';
+@import "../../styles/base.scss";
 
 .overview {
-    h1 {
-        font-family: $title-font;
-        font-size: 3rem;
-        text-transform: uppercase;
-        line-height: 100%;
+  h1 {
+    font-family: $title-font;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 100%;
+  }
+  h2 {
+    font-family: $heading-font;
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 100%;
+  }
+  p {
+    font-family: $p-font;
+    line-height: 160%;
+  }
+  .header {
+    display: flex;
+    color: black;
+    height: 250px;
+    > div {
+      display: flex;
+      align-items: center;
+      &:first-of-type {
+        border-right: solid 2px #000;
+      }
     }
-    h2 {
-        font-family: $heading-font;
-        font-size: 3rem;
-        text-transform: uppercase;
-        line-height: 100%;
-    }
-    p {
-        font-family: $p-font;
-        line-height: 160%;
-    }
-    .header {
-        display: flex;
-        color: black;
-        height: 250px;
-        > div {
-            display: flex;
-            align-items: center;
-            &:first-of-type {
-                border-right: solid 2px #000;
-            }
-        }
-        &-title {
-            background-color: #00C853;
-            width: 40%;
-            padding-right: 60px;
-            h1 {
-                text-align: right;
-            }
-        }
-        &-desc {
-            background-color: #FF4081;
-            width: 60%;
-            padding: 0 8vw 0 60px;
-        }
-    }
-    .schedule {
-        padding: 0 8vw;
-        display: flex;
-        margin: 60px 0 0 0;
+    &-title {
+      background-color: #00c853;
+      width: 40%;
+      padding-right: 60px;
+      h1 {
         text-align: right;
-        justify-content: flex-end;
-        position: relative;
-        > img {
-            width: 70%;
-            position: absolute;
-            left: -27%;
-            top: -420px;
-        }
-        &-desc {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            h2 {
-                width: 450px;
-            }
-            p:first-of-type {
-                width: 450px;
-                margin: 40px 0 36px 0;
-                text-align: justify;
-            }
-            &-prompt {
-                width: 500px;
-                font-family: $heading-font;
-                font-size: 1.1rem;
-            }
-        }
-        a {
-            margin-top: 28px;
-            padding: 4px 4px;
-            width: 450px;
-            text-decoration: none;
-            background-color: #00C853;
-            color: #000;
-            outline: none;
-            border: none;
-            font-family: $button-font;
-            text-transform: uppercase;
-            font-size: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            > img {
-                padding-left: 8px;
-            }
-        }
+      }
     }
+    &-desc {
+      background-color: #ff4081;
+      width: 60%;
+      padding: 0 8vw 0 60px;
+    }
+  }
+  .schedule {
+    padding: 0 8vw;
+    display: flex;
+    margin: 60px 0 0 0;
+    text-align: right;
+    justify-content: flex-end;
+    position: relative;
+    > img {
+      width: 70%;
+      position: absolute;
+      left: -27%;
+      top: -420px;
+    }
+    &-desc {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      h2 {
+        width: 450px;
+      }
+      p:first-of-type {
+        width: 450px;
+        margin: 40px 0 36px 0;
+        text-align: justify;
+      }
+      &-prompt {
+        width: 500px;
+        font-family: $heading-font;
+        font-size: 1.1rem;
+      }
+    }
+    a {
+      margin-top: 28px;
+      padding: 4px 4px;
+      width: 450px;
+      text-decoration: none;
+      background-color: #00c853;
+      color: #000;
+      outline: none;
+      border: none;
+      font-family: $button-font;
+      text-transform: uppercase;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img {
+        padding-left: 8px;
+      }
+    }
+  }
+  .orange-blob {
+    max-height: 1000px;
+    object-fit: contain;
+  }
 }
 
 @media only screen and (max-width: 1080px) {
-    .overview .schedule {
-        > img {
-            top: -320px;
-        }
+  .overview .schedule {
+    > img {
+      top: -320px;
     }
+  }
 }
 
 @media only screen and (max-width: 820px) {
-    .overview {
-        .header {
-            flex-direction: column;
-            &-title { 
-                width: calc(100% - 16vw);
-                justify-content: center;
-                padding: 40px 8vw;
-            }
-            &-desc {
-                width: 100%;
-                padding: 20px 0;
-                > p {
-                    padding: 0 8vw 60px 8vw;
-                    text-align: justify;
-                }
-            }
-            h1 {
-                text-align: center;
-
-            }
+  .overview {
+    .header {
+      flex-direction: column;
+      &-title {
+        width: calc(100% - 16vw);
+        justify-content: center;
+        padding: 40px 8vw;
+      }
+      &-desc {
+        width: 100%;
+        padding: 20px 0;
+        > p {
+          padding: 0 8vw 60px 8vw;
+          text-align: justify;
         }
-        .schedule {
-            margin-top: 300px;
-            justify-content: center;
-            > img {
-                width: 60%;
-                top: -440px;
-            }
-            &-desc {
-                width: 100%;
-                h2, p, p:first-of-type {
-                    text-align: left;
-                    width: 100%;
-                }
-                a {
-                    width: calc(100% - 8px);
-                }
-            }
-        }
+      }
+      h1 {
+        text-align: center;
+      }
     }
+    .schedule {
+      margin-top: 300px;
+      justify-content: center;
+      > img {
+        width: 60%;
+        top: -440px;
+      }
+      &-desc {
+        width: 100%;
+        h2,
+        p,
+        p:first-of-type {
+          text-align: left;
+          width: 100%;
+        }
+        a {
+          width: calc(100% - 8px);
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 705px) {
-    .overview .schedule {
-        margin-top: 300px;
-        > img {
-            left: -19%;
-            top: -340px;
-        }
+  .overview .schedule {
+    margin-top: 300px;
+    > img {
+      left: -19%;
+      top: -340px;
     }
+  }
 }
 
 @media only screen and (max-width: 580px) {
-    .overview .schedule {
-        margin-top: 360px;
-        > img {
-            top: -320px;
-        }
+  .overview .schedule {
+    margin-top: 360px;
+    > img {
+      top: -320px;
     }
+  }
 }
 
 @media only screen and (max-width: 500px) {
-    .overview .schedule {
-        > img {
-            left: -26%;
-            top: -290px;
-            width: 70%;
-        }
-        a {
-            font-size: 1.4rem;
-        }
+  .overview .schedule {
+    > img {
+      left: -26%;
+      top: -290px;
+      width: 70%;
     }
+    a {
+      font-size: 1.4rem;
+    }
+  }
 }
