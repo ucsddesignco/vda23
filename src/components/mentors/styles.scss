@@ -83,37 +83,36 @@
                     align-items: center;
                 }
             }
-        }
-        .box:hover {
-
-            @media only screen and (max-width: $mobile) {
-                .symbol-left {
-                    transform: translate(-30vw, -1rem);
-                }
-                .symbol-midleft {
-                    transform: translate(-20vw, -1rem);
-                }
-                .symbol-newleft {
-                    transform: translate(-25vw, -2rem);
-                    height: 8rem;
-                }
-                .symbol-midright {
-                    transform: translate(3vw, 0.5rem);
-                }
-                .symbol-right {
-                    transform: translate(4vw, -0.5rem);
-                }
-            }
-            img {
-                transform: rotate(15deg) translate(-5vw, -1.5vw);
-
-                @media only screen and (max-width: $desktop) {
-                    height: 13vw;
-                    transform: rotate(15deg) translate(-6vw, -1.5vw);
-                }
+            &:hover {
                 @media only screen and (max-width: $mobile) {
-                    height: 6rem;
-                    transform: translate(-6vw, -1.5vw);
+                    .symbol-left {
+                        transform: translate(-30vw, -1rem);
+                    }
+                    .symbol-midleft {
+                        transform: translate(-20vw, -1rem);
+                    }
+                    .symbol-newleft {
+                        transform: translate(-25vw, -2rem);
+                        height: 8rem;
+                    }
+                    .symbol-midright {
+                        transform: translate(3vw, 0.5rem);
+                    }
+                    .symbol-right {
+                        transform: translate(4vw, -0.5rem);
+                    }
+                }
+                img {
+                    transform: rotate(15deg) translate(-5vw, -1.5vw);
+    
+                    @media only screen and (max-width: $desktop) {
+                        height: 13vw;
+                        transform: rotate(15deg) translate(-6vw, -1.5vw);
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        height: 6rem;
+                        transform: translate(-6vw, -1.5vw);
+                    }
                 }
             }
         }
@@ -139,16 +138,16 @@
                     height: 4.5rem;
                 }
             }
-        }
-        .small:hover {
-            img {
-                transform: rotate(15deg) translate(-5vw, -1vw);
-
-                @media only screen and (max-width: $desktop) {
-                    height: 10vw;
-                }
-                @media only screen and (max-width: $mobile) {
-                    height: 4.5rem;
+            &:hover {
+                img {
+                    transform: rotate(15deg) translate(-5vw, -1vw);
+    
+                    @media only screen and (max-width: $desktop) {
+                        height: 10vw;
+                    }
+                    @media only screen and (max-width: $mobile) {
+                        height: 4.5rem;
+                    }
                 }
             }
         }
