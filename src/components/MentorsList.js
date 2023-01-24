@@ -57,8 +57,8 @@ export const MentorsList = [
     {
         name: 'Meshach',
         color: 'green',
-        experience: 'Web development, web design, visual/graphic design, shirt design',
-        specialty: 'Web development',
+        experience: 'Web development, web design, visual/graphic design, shirt design, social media graphics, logo design',
+        specialty: 'Web development, web design, social media graphics, logo design, typography',
         fun: 'Art, film/tv (Wes Anderson, A24)',
         imgSize: '',
         textSize: '',
