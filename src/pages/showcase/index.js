@@ -20,7 +20,7 @@ const TestImages = {
 
 function Showcase() {
 	const [winWidth, setWinWidth] = useState(window.innerWidth)
-	const [seeButton, setSeeButton] = useState(false)
+	const [showButton, setShowButton] = useState(false)
 
 	const skipButtonRef = useRef()
 	const thumbnailRef = useRef()
@@ -42,9 +42,9 @@ function Showcase() {
 		console.log(thumbnailY <= 10 && apprenticeY > window.innerHeight - 10)
 		console.log(thumbnailY, apprenticeY, window.innerHeight)
 
-		if (thumbnailY <= -50 && apprenticeY > window.innerHeight - 10) {
-			setSeeButton(true)
-		} else setSeeButton(false)
+		if (thumbnailY <= -50 && apprenticeY > window.innerHeight - 10 && window.innerWidth <= 600) {
+			setShowButton(true)
+		} else setShowButton(false)
 	}
 
 	const jumpToApprentice = () => {
@@ -56,11 +56,9 @@ function Showcase() {
 			<Navbar />
 			<button
 				ref={skipButtonRef}
-				id='skip-button'
+				className={'skip-button' + (showButton ? ' skip-button-visible' : ' skip-button-hidden')}
 				onClick={jumpToApprentice}
-				style={{
-					display: seeButton ? undefined : 'none',
-				}}
+				aria-hidden={true}
 			>
 				<i id='arrow-down' />
 			</button>
