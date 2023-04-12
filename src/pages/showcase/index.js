@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { ThumbnailList } from '@arth-shukla/dco-mponents'
 
-import Landing from '../../components/landing'
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 
