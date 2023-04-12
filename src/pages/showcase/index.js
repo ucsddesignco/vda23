@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { ThumbnailList } from '@arth-shukla/dco-mponents'
 
 import Landing from '../../components/landing'
@@ -20,17 +20,51 @@ const TestImages = {
 
 function Showcase() {
 	const [winWidth, setWinWidth] = useState(window.innerWidth)
+	const [seeButton, setSeeButton] = useState(false)
+
+	const skipButtonRef = useRef()
+	const thumbnailRef = useRef()
+	const apprenticeRef = useRef()
+
+	useEffect(() => {
+		window.addEventListener('resize', handleResize, { passive: true })
+		window.addEventListener('scroll', handleScroll, { passive: true })
+	}, [])
+
 	const handleResize = () => {
 		setWinWidth(window.innerWidth)
 	}
-	useEffect(() => {
-		window.addEventListener('resize', handleResize, { passive: true })
-	}, [])
+
+	const handleScroll = () => {
+		let thumbnailY = thumbnailRef.current?.getBoundingClientRect().top,
+			apprenticeY = apprenticeRef.current?.getBoundingClientRect().top
+
+		console.log(thumbnailY <= 10 && apprenticeY > window.innerHeight - 10)
+		console.log(thumbnailY, apprenticeY, window.innerHeight)
+
+		if (thumbnailY <= -50 && apprenticeY > window.innerHeight - 10) {
+			setSeeButton(true)
+		} else setSeeButton(false)
+	}
+
+	const jumpToApprentice = () => {
+		apprenticeRef.current?.scrollIntoView({ behavior: 'smooth' })
+	}
 
 	return (
 		<div className='showcase'>
 			<Navbar />
-			<section>
+			<button
+				ref={skipButtonRef}
+				id='skip-button'
+				onClick={jumpToApprentice}
+				style={{
+					display: seeButton ? undefined : 'none',
+				}}
+			>
+				<i id='arrow-down' />
+			</button>
+			<section ref={thumbnailRef}>
 				<h1>Final Showcase</h1>
 				<p>Throughout 12 weeks, apprentices created logos, UI screens, social media graphics, merch designs, and created brand identities. </p>
 				<ThumbnailList
@@ -41,7 +75,7 @@ function Showcase() {
 					imagePadding={winWidth > 600 ? 10 : 0}
 				/>
 			</section>
-			<section>
+			<section ref={apprenticeRef}>
 				<h1>Apprentice Experience</h1>
 			</section>
 			<Footer />

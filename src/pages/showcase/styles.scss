@@ -1,6 +1,27 @@
 @import '../../styles/base.scss';
 
 .showcase {
+	#skip-button {
+		position: fixed;
+		bottom: 100px;
+		right: 13px;
+
+		background-color: $accent-color-1;
+		border: none;
+		height: 47px;
+		width: 53px;
+
+		cursor: pointer;
+
+		#arrow-down {
+			border: solid black;
+			border-width: 0 7px 7px 0;
+			display: inline-block;
+			padding: 3px;
+			transform: rotate(45deg);
+			-webkit-transform: rotate(45deg);
+		}
+	}
 	section {
 		padding: 64px;
 		h1 {
