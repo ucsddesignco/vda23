@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import uuid from 'react-uuid'
 
 import './styles.scss'
@@ -19,6 +19,17 @@ import './styles.scss'
 // }
 
 function ThumbnailList({ thumbnails, thumbnailsPerRow = 3, forceSquare = true, justifyContent = 'space-around', imagePadding = 0 }) {
+	const generateKeys = () => {
+		const thumbnailKeys = {}
+
+		Object.keys(thumbnails).map(cap => {
+			thumbnailKeys[cap] = uuid()
+		})
+
+		return thumbnailKeys
+	}
+
+	const [uuidKeys, _] = useState(generateKeys())
 	return (
 		<div
 			className='dcomp-thumbnail-list-container'
@@ -40,7 +51,7 @@ function ThumbnailList({ thumbnails, thumbnailsPerRow = 3, forceSquare = true, j
 							'--max-thumbnail-width': `calc(${Math.floor((100 / thumbnailsPerRow) * 100) / 100}%`,
 							'--image-padding': `${imagePadding}px`,
 						},
-						key: uuid(),
+						key: uuidKeys[cap],
 					},
 					// children
 					<>
