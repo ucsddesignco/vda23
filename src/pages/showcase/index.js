@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { ThumbnailList } from '@arth-shukla/dco-mponents'
 
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
+import ThumbnailList from '../../components/thumbnailList'
 
 import './styles.scss'
 
