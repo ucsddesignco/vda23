@@ -1,6 +1,7 @@
 @import '../../styles/base.scss';
 
 .showcase {
+	padding: 2rem $desktop-padding;
 	.skip-button {
 		position: fixed;
 		right: 13px;
@@ -33,7 +34,6 @@
 		}
 	}
 	section {
-		padding: 64px;
 		h1 {
 			font-family: $title-font;
 			font-size: 3rem;

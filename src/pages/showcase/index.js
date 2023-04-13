@@ -51,8 +51,9 @@ function Showcase() {
 	}
 
 	return (
+		<>
+		<Navbar />
 		<div className='showcase'>
-			<Navbar />
 			<button
 				ref={skipButtonRef}
 				className={'skip-button' + (showButton ? ' skip-button-visible' : ' skip-button-hidden')}
@@ -75,8 +76,9 @@ function Showcase() {
 			<section ref={apprenticeRef}>
 				<h1>Apprentice Experience</h1>
 			</section>
-			<Footer />
 		</div>
+		<Footer />
+		</>
 	)
 }
 
