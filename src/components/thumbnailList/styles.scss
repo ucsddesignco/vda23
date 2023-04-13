@@ -7,6 +7,11 @@
 		all: unset;
 	}
 
+	a {
+		color: unset;
+		text-decoration: unset;
+	}
+
 	.dcomp-thumbnail-list-thumbnail {
 		flex: 0 0 calc(var(--max-thumbnail-width) - 2 * var(--image-padding));
 		text-align: center;
