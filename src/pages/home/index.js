@@ -5,6 +5,7 @@ import Footer from '../../components/footer';
 import WhyApply from '../../components/whyapply';
 import FAQ from '../../components/faq';
 import FAQNEW from '../../components/faqnew';
+import Experience from '../../components/experience';
 
 import './styles.scss';
 
@@ -14,6 +15,7 @@ function Home() {
       <Navbar />
       <Landing />
       <WhyApply />
+      <Experience />
       <FAQNEW />
       <Footer />
     </div>
