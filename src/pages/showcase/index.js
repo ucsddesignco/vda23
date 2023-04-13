@@ -92,7 +92,7 @@ function Showcase() {
 					<i id='arrow-down' />
 				</button>
 				<section ref={thumbnailRef}>
-					<h1>Final Showcase</h1>
+					<h2>Final Showcase</h2>
 					<p>Throughout 12 weeks, apprentices created logos, UI screens, social media graphics, merch designs, and created brand identities. </p>
 					<ThumbnailList
 						thumbnails={testImages}
@@ -103,7 +103,7 @@ function Showcase() {
 					/>
 				</section>
 				<section ref={apprenticeRef}>
-					<h1>Apprentice Experience</h1>
+					<h2>Apprentice Experience</h2>
 				</section>
 			</div>
 			<Footer />
