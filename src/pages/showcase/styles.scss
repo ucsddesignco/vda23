@@ -56,12 +56,27 @@
 		.dcomp-thumbnail-list-thumbnail {
 			padding-top: 0;
 			padding-bottom: 0;
+			cursor: pointer;
+
+			.dcomp-thumbnail-list-image {
+				transition: transform 0.3s ease-in-out;
+				&:hover {
+					transform: scale(0.95);
+				}
+				&:not(:hover) {
+					transform: scale(1);
+				}
+			}
 
 			.dcomp-thumbnail-list-image-caption {
 				display: block;
 				text-align: left;
 				font-family: $heading-font;
 				padding: 10px 0 40px;
+
+				&:hover {
+					text-decoration: underline;
+				}
 			}
 		}
 	}

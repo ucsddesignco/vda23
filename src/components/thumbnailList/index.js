@@ -22,14 +22,16 @@ function ThumbnailList({ thumbnails, thumbnailsPerRow = 3, forceSquare = true, j
 	const generateKeys = () => {
 		const thumbnailKeys = {}
 
-		Object.keys(thumbnails).map(cap => {
+		Object.keys(thumbnails).forEach(cap => {
 			thumbnailKeys[cap] = uuid()
 		})
 
 		return thumbnailKeys
 	}
 
+	// eslint-disable-next-line
 	const [uuidKeys, _] = useState(generateKeys())
+
 	return (
 		<div
 			className='dcomp-thumbnail-list-container'
