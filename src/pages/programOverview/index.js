@@ -49,7 +49,7 @@ function ProgramOverview() {
             target="_blank"
             rel="noreferrer"
           >
-            View Full Timeline
+            <span>View Full Timeline</span>
             <img src={Star} alt="star" />
           </a>
         </div>
