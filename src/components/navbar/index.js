@@ -29,12 +29,12 @@ function Navbar() {
           <img className='logo' src={Logo} alt="" />
         </NavLink>
         <ul>
-          <li><NavLink to="/">Home</NavLink></li>
-          <li><NavLink to="/program-overview">Program Overview</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/">Home</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/program-overview">Program Overview</NavLink></li>
           <li>
             <a className='button' href="https://forms.gle/2bnSgXW4Usddx6JP6" target='_blank'>
               <p>APPLY</p>
-              <img src={Star} alt="" />
+              <img src={Star} alt="star" />
             </a>
           </li>
         </ul>

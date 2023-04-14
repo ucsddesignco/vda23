@@ -28,6 +28,11 @@
             @media only screen and (max-width: $desktop) {
                 margin-left: 1rem;
             }
+
+            .active {
+                font-family: 'Brice Bold';
+            }
+            
             a {
                 color: white;
                 text-decoration: none;
