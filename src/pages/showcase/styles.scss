@@ -34,6 +34,10 @@
 			// transform: translateY(150px);
 			bottom: -70px;
 		}
+
+		&:active {
+			background-color: #008437;
+		}
 	}
 	section {
 		h1 {
