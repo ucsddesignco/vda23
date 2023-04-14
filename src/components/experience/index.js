@@ -7,6 +7,13 @@ import exp3 from "../../assets/images/experience/exp3.jpg"
 import exp4 from "../../assets/images/experience/exp4.jpg"
 import exp5 from "../../assets/images/experience/exp5.jpg"
 
+import symbol1 from "../../assets/images/program/symbol1.png"
+import symbol2 from "../../assets/images/program/symbol2.png"
+import symbol3 from "../../assets/images/program/symbol3.png"
+import symbol4 from "../../assets/images/program/symbol4.png"
+import symbol6 from "../../assets/images/program/symbol6.png"
+import symbol7 from "../../assets/images/program/symbol7.png"
+import Star from "../../assets/images/program/star.svg"
 
 function Experience() {
   return (
@@ -14,6 +21,7 @@ function Experience() {
       <h2>APPRENTICE EXPERIENCE</h2>
       <div className="apprentice-container">
         <div className="section-1">
+          <img className='symbol section-1-symbol4' src={symbol4} alt="" />
           <div className="section-1-left">
             <div id="top">
               <h4>VDA: THE WAY OF VISUAL DESIGN</h4> 
@@ -27,10 +35,14 @@ function Experience() {
           <img alttext="Image of Students at a VDA Meeting" src={exp1} />
 
         </div>
-        
-        <img alttext="VDA Group Photo" className='section-2' src={exp2} />
+        <div className="section-2">
+          <img className='symbol section-2-symbol3' src={symbol3} alt="" />
+          <img alttext="VDA Group Photo" className='section-2-photo' src={exp2} />
+        </div>
         
         <div className='section-3'>
+          <img className='symbol section-3-symbol6' src={symbol6} alt="" />
+          <img className='symbol section-3-symbol7' src={symbol7} alt="" />
           <img alttext="Somi Somi Social" className="section-3-left" src={exp3} /> 
           <div className="section-3-right">
             <img alttext="Image of VDA Meeting" id="top" src={exp4} />
@@ -41,6 +53,8 @@ function Experience() {
           </div>
         </div>
         <div className="section-4">
+          <img className='symbol section-4-symbol1' src={symbol1} alt="" />
+          <img className='symbol section-4-symbol2' src={symbol2} alt="" />
           <div id='left'>
             <p>“My biggest takeaway was definitely being guided through these applications. It helped me shorten my learning curve by a lot by being able to ask questions and learn from the tutorials.”</p>
             <h5 className='quote-name'>Jeana Yoon, 2nd year</h5>
@@ -53,7 +67,10 @@ function Experience() {
 
       <div className='learn-more-container'>
         <h4>Learn more about the VDA program below!</h4>
-        <button type="button" className='learn-more-button'></button>
+        <button type="button" className='learn-more-button'>
+          <p>LEARN MORE</p>
+          <img src={Star} alt="" />
+        </button>
       </div>
 
     </div>

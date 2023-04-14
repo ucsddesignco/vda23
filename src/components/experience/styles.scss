@@ -51,6 +51,11 @@
             font-size: 1rem;
         }
     }
+    .symbol {
+        position: absolute;
+        object-fit: contain;
+        width: 12vw;
+    }
 
     > .apprentice-container {
         display: flex;
@@ -60,7 +65,13 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            position: relative;
 
+            > .section-1-symbol4 {
+                left: -4vw;
+                top: -14rem;
+                width: 18vw;
+            }
             > .section-1-left {
                 display: flex;
                 flex-direction: column;
@@ -106,12 +117,30 @@
             }
         }
         > .section-2 {
-            height: 100%;
+            position: relative;
+            
+            > .section-2-symbol3 {
+                right: -4vw;
+                top: -8rem;
+            }
+            > .section-2-photo {
+                width: 100%;
+            }
         }
         > .section-3 {
             display: flex;
             flex-direction: row;
+            position: relative;
 
+            > .section-3-symbol6 {
+                left: -4vw;
+                top: -8rem;
+            }
+            > .section-3-symbol7 {
+                width: 14vw;
+                right: -4vw;
+                top: -8rem;
+            }
             > .section-3-left {
                 width: 39.66rem;
 
@@ -148,6 +177,18 @@
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
+            position: relative;
+
+            > .section-4-symbol1 {
+                right: 8vw;
+                bottom: -4rem;
+            }
+            > .section-4-symbol2 {
+                width: 14vw;
+                right: -4vw;
+                bottom: -4rem;
+            }
+
             > #left {
                 display: flex;
                 flex-direction: column;
@@ -178,22 +219,41 @@
         }
     }
      
-    .learn-more-container {
+    > .learn-more-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 4rem 0;
 
-        .learn-more-button {
+        > button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
             background-color: $accent-color-1;
+            padding: 0.75rem 1.5rem;
+            margin-top: 2rem;
+            transition: 0.25s;
+            cursor: pointer;
 
-            
+            p {
+                font-size: 2rem;
+                font-family: $title-font;
+
+            }
+            img {
+                width: 2rem;
+                transform: translateY(-0.2rem);
+                margin-left: 1rem;
+            }
         }
-        .learn-more-button:hover {
+        > button:hover {
             text-decoration: none;
             transform: scale(0.9);
         }
-        .learn-more-button:active {
-            background-color: 008437;
+        > button:active {
+            background-color: #008437;
         }
     }
 }
