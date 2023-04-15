@@ -43,8 +43,8 @@ function Experience() {
           </div>
           
           <div className='section-3'>
-            <img className='symbol symbol2' src={symbol6} alt="" />
-            <img className='symbol symbol3' src={symbol7} alt="" />
+            <img className='symbol section-3-symbol6' src={symbol6} alt="" />
+            <img className='symbol section-3-symbol7' src={symbol7} alt="" />
             <img alttext="Somi Somi Social" className="section-3-left" src={exp3} /> 
             <div className="section-3-right">
               <img alttext="Image of VDA Meeting" id="top" src={exp4} />

@@ -1,14 +1,162 @@
 @import '../../styles/base.scss';
-@media only screen and (max-width: $mobile) {
-    .mobile-experience {
-        display: flex;
+.experience {
+    .mobile-cont {
+        h2 {
+            margin-bottom: 2.5rem;
+        }
+
+        h4 {
+            font-size: 1.4rem;
+            font-family: $heading-font;
+            font-weight: 400;
+            line-height: 1.25rem;
+        }
+
+        a {
+            font-size: 1.15rem;
+            font-family: $heading-font;
+            color: black;
+        }
+        .mobile-experience {
+
+            .symbol {
+                position: absolute;
+                object-fit: contain;
+                width: 20vw;
+            }
+            .symbol.symbol1 {
+            
+                transform: translate(-1.2rem, 4.6rem);
+            }
+
+            .symbol.symbol2 {
+                width: 24vw;
+                transform: translate(3.5rem, -2rem);
+            }
+            .symbol.symbol3 {
+                transform: translate(15rem, -2rem);
+            }
+            .symbol.symbol4 {
+                width: 20vw;
+                transform: translate(-2.4rem, -2.8rem);
+            }
+            .symbol.symbol5 {
+                width: 20vw;
+                transform: translate(17.6rem, -6.6rem);
+            }
+            .symbol.symbol6 {
+                width: 18vw;
+                transform: translate(-2rem, -1.6rem);
+            }
+            .symbol.symbol7 {
+                transform: translate(16rem, -3.6rem);
+            }
+
+            
+
+          
+            display: flex;
+            flex-direction: column;
+            padding: 10vw;
+
+            > .section-one {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                background-color: $accent-color-1;
+                color: black;
+                height: 5.6rem;
+                padding: 1.5rem 2rem 1.5rem 4rem;
+
+                > .header-text {
+                    text-align: right;
+                    margin-bottom: 0.4rem;
+                }
+            }
+
+            .quote {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                padding: 2rem 0rem 2rem 0rem;
+
+                p {
+                    font-size: 0.9rem;
+                    font-family: $p-font;
+                    padding-bottom: 0.6rem;
+                }
+                h5 {
+                    font-size: 1.1rem;
+                    font-family: $heading-font;
+                    line-height: 1.3;
+                    font-weight: 400;
+                    color: #5F5F5F;
+                    margin-bottom: 0px;
+                }
+
+            }
+
+            .quote.three {
+                padding: 2rem 0rem 0rem 0rem;
+            }
+        }
+        .pinkbar {
+            height: 8vw;
+            width: 100vw;
+            background-color: #FF4081;
+
+        }
+        > .learn-more-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3rem 4.4rem 3rem 4.4rem;
+            text-align: center;
+
+            h4 {
+                font-size: 1.25rem;
+            }
+
+            > button {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background-color: $accent-color-1;
+                padding: 0.5rem 0.8rem;
+                margin-top: 2rem;
+                transition: 0.25s;
+                cursor: pointer;
+                border: none;
+                width: 100%;
+                height: 3.25rem;
+
+                p {
+                    font-size: 1.25rem;
+                    font-family: $title-font;
+
+                }
+                img {
+                    width: 1.75rem;
+                    transform: translateY(-0rem);
+                    margin-left: 1rem;
+                }
+            }
+            > button:hover {
+                text-decoration: none;
+                transform: scale(0.9);
+            }
+            > button:active {
+                background-color: #008437;
+            }
+        }
+
     }
+    
     .desktop-experience {
         display: none;
-    }
-}
-.experience {
-    .desktop-experience {
         padding: 4rem 8vw; 
 
         h2 {
@@ -322,159 +470,13 @@
             }
         }
     }
-
-    .mobile-cont {
-        h2 {
-            margin-bottom: 2.5rem;
+    @media only screen and (min-width: $mobile) {
+        .mobile-cont {
+            display: none;
         }
-
-        h4 {
-            font-size: 1.4rem;
-            font-family: $heading-font;
-            font-weight: 400;
-            line-height: 1.25rem;
+        .desktop-experience {
+            display: inherit;
         }
-
-        a {
-            font-size: 1.15rem;
-            font-family: $heading-font;
-            color: black;
-        }
-        .mobile-experience {
-
-            .symbol {
-                position: absolute;
-                object-fit: contain;
-                width: 20vw;
-            }
-            .symbol.symbol1 {
-            
-                transform: translate(-1.2rem, 4.6rem);
-            }
-
-            .symbol.symbol2 {
-                width: 24vw;
-                transform: translate(3.5rem, -2rem);
-            }
-            .symbol.symbol3 {
-                transform: translate(15rem, -2rem);
-            }
-            .symbol.symbol4 {
-                width: 20vw;
-                transform: translate(-2.4rem, -2.8rem);
-            }
-            .symbol.symbol5 {
-                width: 20vw;
-                transform: translate(17.6rem, -6.6rem);
-            }
-            .symbol.symbol6 {
-                width: 18vw;
-                transform: translate(-2rem, -1.6rem);
-            }
-            .symbol.symbol7 {
-                transform: translate(16rem, -3.6rem);
-            }
-
-            
-
-          
-            display: flex;
-            flex-direction: column;
-            padding: 10vw;
-
-            > .section-one {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                justify-content: center;
-                background-color: $accent-color-1;
-                color: black;
-                height: 5.6rem;
-                padding: 1.5rem 2rem 1.5rem 4rem;
-
-                > .header-text {
-                    text-align: right;
-                    margin-bottom: 0.4rem;
-                }
-            }
-
-            .quote {
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                padding: 2rem 0rem 2rem 0rem;
-
-                p {
-                    font-size: 0.9rem;
-                    font-family: $p-font;
-                    padding-bottom: 0.6rem;
-                }
-                h5 {
-                    font-size: 1.1rem;
-                    font-family: $heading-font;
-                    line-height: 1.3;
-                    font-weight: 400;
-                    color: #5F5F5F;
-                    margin-bottom: 0px;
-                }
-
-            }
-
-            .quote.three {
-                padding: 2rem 0rem 0rem 0rem;
-            }
-        }
-        .pinkbar {
-            height: 8vw;
-            width: 100vw;
-            background-color: #FF4081;
-
-        }
-        > .learn-more-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 3rem 4.4rem 3rem 4.4rem;
-            text-align: center;
-
-            h4 {
-                font-size: 1.25rem;
-            }
-
-            > button {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                background-color: $accent-color-1;
-                padding: 0.5rem 0.8rem;
-                margin-top: 2rem;
-                transition: 0.25s;
-                cursor: pointer;
-                border: none;
-                width: 100%;
-                height: 3.25rem;
-
-                p {
-                    font-size: 1.25rem;
-                    font-family: $title-font;
-
-                }
-                img {
-                    width: 1.75rem;
-                    transform: translateY(-0rem);
-                    margin-left: 1rem;
-                }
-            }
-            > button:hover {
-                text-decoration: none;
-                transform: scale(0.9);
-            }
-            > button:active {
-                background-color: #008437;
-            }
-        }
-
     }
+
 }
