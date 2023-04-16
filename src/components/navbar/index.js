@@ -3,7 +3,6 @@ import './styles.scss';
 import { NavLink } from 'react-router-dom';
 
 import Logo from '../../assets/images/home/vda-white.png';
-import Star from '../../assets/images/home/star-black.png';
 import Hamburger from '../../assets/images/home/hamburger.svg';
 import Cross from '../../assets/images/home/cross.svg';
 
@@ -59,6 +58,7 @@ function Navbar() {
           handleMenuClick();
         }}
         className="hamburger"
+        alt="Hamburger menu"
       />
       {menuOpen && (
         <div className="background">
@@ -72,10 +72,12 @@ function Navbar() {
                 closeMenu();
               }}
               className="mobile-hamburger"
+              alt="Close hamburger menu"
             />
           </div>
           <li class="middle">
             <NavLink
+            onClick={closeMenu}
               className={({ isActive }) => (isActive ? 'active' : '')}
               to="/"
             >
@@ -84,6 +86,7 @@ function Navbar() {
           </li>
           <li class="middle">
             <NavLink
+              onClick={closeMenu}
               className={({ isActive }) => (isActive ? 'active' : '')}
               to="/about"
             >
@@ -92,6 +95,7 @@ function Navbar() {
           </li>
           <li class="middle">
             <NavLink
+            onClick={closeMenu}
               className={({ isActive }) => (isActive ? 'active' : '')}
               to="/program-overview"
             >
