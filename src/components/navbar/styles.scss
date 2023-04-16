@@ -111,6 +111,10 @@
             flex-direction: column;
             z-index: 100000000;
 
+            li {
+                list-style: none;
+            }
+
             .top {
                 display: flex;
                 flex-direction: row;
@@ -132,12 +136,19 @@
                 border-bottom: 1px solid white;
                 padding: 1.5rem $mobile-padding;
                 text-decoration: none;
+                font-size: 1.5rem;
+                
+                text-decoration: none;
+                font-family: $heading-font;
 
-                p {
-                    font-size: 1.5rem;
+                a {
+                    text-decoration:none;
                     color: white;
-                    text-decoration: none;
-                    font-family: $heading-font;
+
+                }
+
+                .active {
+                    font-family: 'Brice Bold';
                 }
             }
             .bottom {
