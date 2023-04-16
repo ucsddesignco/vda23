@@ -75,8 +75,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-  @media only screen and (max-width: 800px) {
-    grid-template-columns: 1fr !important;
+  @media only screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
   }
 
   .justify {
@@ -84,11 +84,9 @@ body {
   }
 
   .grid-child-img {
-
-    @media only screen and (max-width: 800px) {
+    @media only screen and (max-width: $mobile) {
       display: none;
     }
-
   }
 
   .green-blob {
@@ -103,17 +101,7 @@ body {
   }
 
   .grid-child-text {
-    &-inner {
-      padding-right: 20%;
-
-    }
     padding: 4rem 8vw;
-
-    @media only screen and (max-width: 1200px) {
-      &-inner {
-        padding-right: 0;
-      }
-    }
 
     @media only screen and (max-width: $mobile) {
       padding: 2.5rem 8vw;

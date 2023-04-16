@@ -1,6 +1,9 @@
 @import '../../styles/base.scss';
 
 .showcase {
+	&-section {
+		margin-bottom: 112px;
+	}
 	padding: 2rem $desktop-padding;
 	.skip-button {
 		position: fixed;
@@ -86,4 +89,42 @@
 			}
 		}
 	}
+
+	
 }
+
+.view-showcase-button {
+	width: 100%;
+	margin-top: 40px;
+	padding: 0.75em 1em;
+	text-decoration: none;
+	background-color: $accent-color-1;
+	color: black;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.25s;
+
+	img {
+	  padding-left: 1em;
+  	}
+
+	span {
+	  font-family: $title-font;
+	  line-height: 1em;
+	  height: 0.8em;
+	  text-transform: uppercase;
+	  font-size: clamp(0.8rem, calc(1vw + 1rem), 2rem)
+	}
+
+	&:hover, &:focus-visible {
+	  transform: scale(0.9);
+	  cursor: pointer;
+	}
+
+	&:active {
+		filter: brightness(75%);
+  	}
+  }
