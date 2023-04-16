@@ -22,15 +22,15 @@ function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Home />}
+					element={<Showcase />}
 				/>
 				<Route
 					path='/program-overview'
 					element={<ProgramOverview />}
 				/>
 				<Route
-					path='/showcase'
-					element={<Showcase />}
+					path='/about'
+					element={<Home />}
 				/>
 			</Routes>
 		</Router>

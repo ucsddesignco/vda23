@@ -29,8 +29,8 @@ function Navbar() {
           <img className='logo' src={Logo} alt="" />
         </NavLink>
         <ul>
-          <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/showcase">Showcase</NavLink></li>
-          <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/">About</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/">Showcase</NavLink></li>
+          <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/about">About</NavLink></li>
           <li><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/program-overview">Program Overview</NavLink></li>
 
         </ul>
