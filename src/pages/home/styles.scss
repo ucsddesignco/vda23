@@ -133,4 +133,18 @@
 			font-size: 2rem;
 		}
     }
+
+	@media only screen and (max-width: 460px) {
+        width: 100%;
+		span {
+			font-size: calc(6.5vw);
+		}
+    }
+
+	@media only screen and (max-width: 360px) {
+        width: 100%;
+		span {
+			font-size: calc(3vw + 8px);
+		}
+    }
   }
