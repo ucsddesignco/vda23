@@ -94,9 +94,8 @@
 }
 
 .view-showcase-button {
-	width: 100%;
 	margin-top: 40px;
-	padding: 0.75em 1em;
+	padding: 1rem 1rem;
 	text-decoration: none;
 	background-color: $accent-color-1;
 	color: black;
@@ -116,7 +115,7 @@
 	  line-height: 1em;
 	  height: 0.8em;
 	  text-transform: uppercase;
-	  font-size: clamp(0.8rem, calc(1vw + 1rem), 2rem)
+	  font-size:  clamp(.8rem,calc(1vw + 1rem),2rem);
 	}
 
 	&:hover, &:focus-visible {
@@ -127,4 +126,11 @@
 	&:active {
 		filter: brightness(75%);
   	}
+
+	@media only screen and (max-width: $mobile) {
+        width: 100%;
+		span {
+			font-size: 2rem;
+		}
+    }
   }
