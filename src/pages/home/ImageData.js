@@ -12,14 +12,14 @@ import elliechen from '../../assets/images/thumbnails/Ellie_Chen_F3.png'
 import hillaryma from '../../assets/images/thumbnails/Hillary_Ma_F3.png'
 import irenejoo from '../../assets/images/thumbnails/Joo_Irene_F3.png'
 import jamelenedevera from '../../assets/images/thumbnails/Jamelene_Devera_F3.png'
-// import jeanayoon from '../../assets/images/thumbnails/Jeana_Yoon_F3.png'
+import jeanayoon from '../../assets/images/thumbnails/Jeana_Yoon_F3.png'
 import joanaperalta from '../../assets/images/thumbnails/Joana_Peralta_F3.png'
 import justinalinas from '../../assets/images/thumbnails/Justin_Alinas_F3.png'
 import katiebonilla from '../../assets/images/thumbnails/Katie_Bonilla_F3.png'
 import kaylielam from '../../assets/images/thumbnails/Kaylie_Lam_F3.png'
 import keanunazemi from '../../assets/images/thumbnails/Keanu_Nazemi_F3.png'
 import leynapham from '../../assets/images/thumbnails/Leyna_Pham_F3.png'
-// import lindseyto from '../../assets/images/thumbnails/Lindsey_To_F3.png'
+import lindseyto from '../../assets/images/thumbnails/Lindsey_To_F3.png'
 import madewidyadhari from '../../assets/images/thumbnails/Made_Widyadhari_F3.png'
 import mayapatel from '../../assets/images/thumbnails/Maya_Patel_F3.png'
 import nicholasregli from '../../assets/images/thumbnails/Nicholas_Regli_F3.png'
@@ -108,11 +108,11 @@ const ImageData = {
 		href: 'https://www.notion.so/VDA-Showcase-Assignment-39c35c0376e24ce084df9c2a0793e250?pvs=4',
 		alt: 'Submission from Jamelene Devera.',
 	},
-	// 'Jeana Yoon': {
-	// 	src: jeanayoon,
-	// 	href: 'https://iced-tree-ac6.notion.site/F3-Final-Showcase-c01ed26810234156969b1105cab8089f',
-	// 	alt: 'Submission from Jeana Yoon.',
-	// },
+	'Jeana Yoon': {
+		src: jeanayoon,
+		href: 'https://iced-tree-ac6.notion.site/F3-Final-Showcase-c01ed26810234156969b1105cab8089f',
+		alt: 'Submission from Jeana Yoon.',
+	},
 	'Joana Peralta': {
 		src: joanaperalta,
 		href: 'https://acute-spring-189.notion.site/All-Designs-Refections-2d3b6bdf57354351ba4bd8ba126ebf55',
@@ -148,11 +148,11 @@ const ImageData = {
 		href: 'https://madewidyadhari.notion.site/Widya-s-awesome-vda-journal-2cb75fbe73f545b785bd317021d3ac30',
 		alt: 'Submission from Made Widyadhari.',
 	},
-	// 'Lindsey To': {
-	// 	src: lindseyto,
-	// 	href: 'https://lindseyto.notion.site/lindsey-s-vda-journey-98c777ea6c4647daa46f545c8050262e',
-	// 	alt: 'Submission from Lindsey To.',
-	// },
+	'Lindsey To': {
+		src: lindseyto,
+		href: 'https://lindseyto.notion.site/lindsey-s-vda-journey-98c777ea6c4647daa46f545c8050262e',
+		alt: 'Submission from Lindsey To.',
+	},
 	'Maya Patel': {
 		src: mayapatel,
 		href: 'https://foil-attempt-75e.notion.site/VDA-Journal-2f9c47c8909d462985ad5111b928ce06',
