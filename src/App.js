@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'
-import Home from './pages/home'
+import Home from './pages/about'
 import ProgramOverview from './pages/programOverview'
-import Showcase from './pages/showcase'
+import Showcase from './pages/home'
 
 const ScrollToTop = () => {
 	const { pathname } = useLocation()
@@ -22,15 +22,15 @@ function App() {
 			<Routes>
 				<Route
 					path='/'
-					element={<Home />}
+					element={<Showcase />}
 				/>
 				<Route
 					path='/program-overview'
 					element={<ProgramOverview />}
 				/>
 				<Route
-					path='/showcase'
-					element={<Showcase />}
+					path='/about'
+					element={<Home />}
 				/>
 			</Routes>
 		</Router>
