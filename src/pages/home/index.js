@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import Navbar from '../../components/navbar'
 import Footer from '../../components/footer'
 import Landing from '../../components/landing'
+import Experience from '../../components/experience'
 import ThumbnailList from '../../components/thumbnailList'
 import Star from '../../assets/images/program/star.svg'
 import ImageData from './ImageData'
@@ -132,10 +133,8 @@ function Showcase() {
 						imagePadding={winWidth > 600 ? 10 : 0}
 					/>
 				</section>
-				<section ref={apprenticeRef}>
-					<h2>Apprentice Experience</h2>
-				</section>
 			</div>
+      <Experience />
 			<Footer />
 		</>
 	)
