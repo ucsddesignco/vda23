@@ -1,0 +1,28 @@
+.dcomp-thumbnail-list-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	figure,
+	figcaption {
+		all: unset;
+	}
+
+	a {
+		color: unset;
+		text-decoration: unset;
+	}
+
+	.dcomp-thumbnail-list-thumbnail {
+		flex: 0 0 calc(var(--max-thumbnail-width) - 2 * var(--image-padding));
+		text-align: center;
+		padding: var(--image-padding);
+		width: 0;
+
+		.dcomp-thumbnail-list-image {
+			&-square {
+				object-fit: cover;
+				aspect-ratio: 1 / 1;
+			}
+		}
+	}
+}
