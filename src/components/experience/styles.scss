@@ -7,7 +7,7 @@
         }
 
         h4 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             font-family: $heading-font;
             font-weight: 400;
             line-height: 1.25rem;
@@ -35,8 +35,8 @@
                 width: 20vw;
             }
             .symbol.symbol1 {
-            
-                transform: translate(-1.2rem, 4.6rem);
+                width: 22vw;
+                transform: translate(-1.8rem, 4.8rem);
             }
 
             .symbol.symbol2 {
@@ -77,11 +77,14 @@
                 background-color: $accent-color-1;
                 color: black;
                 height: 5.6rem;
-                padding: 1.5rem 2rem 1.5rem 4rem;
+                padding: 1.5rem 1.5rem 1.5rem 3rem;
+
 
                 > .header-text {
                     text-align: right;
                     margin-bottom: 0.4rem;
+                    text-transform: uppercase;
+
                 }
             }
 
@@ -145,7 +148,7 @@
                 color: black;
 
                 p {
-                    font-size: 1.5rem;
+                    font-size: 1.4rem;
                     font-family: $title-font;
 
                 }
@@ -167,7 +170,7 @@
         padding: 4rem 8vw; 
 
         h2 {
-            font-size: 4.45rem;
+            font-size: 4.5rem;
             margin-bottom: 4.4rem; 
             @media only screen and (max-width: $desktop) {
                 font-size: 2.4rem;
@@ -233,11 +236,6 @@
                 justify-content: space-between;
                 position: relative;
 
-                > .section-1-symbol4 {
-                    left: -3vw;
-                    top: -4rem;
-                    width: 18vw;
-                }
                 > .section-1-left {
                     display: flex;
                     flex-direction: column;
@@ -252,11 +250,25 @@
                         text-align: right;
                         height: 10vw;
                         padding: clamp(0rem, 2.4vw, 3rem);
+                        > .section-1-symbol4 {
+                            left: -3vw;
+                            top: -4rem;
+                            width: 18vw;
+                            transition: 0.5s;
+                        }
+                        &:hover {
+                            .section-1-symbol4 {
+                                transform: rotate(15deg) translate(-1vw, -1.5vw);
+                                transform-origin: center;
+                            }
+                        }
 
                         > h4 {
-                            line-height: clamp(1.4rem, 3vw, 3rem);
-                            font-size: clamp(1rem, 3.4vw, 3rem);
-                            margin-left: 16vw;
+                            text-transform: uppercase;
+                            letter-spacing: -0.05rem;
+                            line-height: clamp(1rem, 2.4vw, 3rem);
+                            font-size: clamp(1rem, 2.6vw, 3rem);
+                            margin-left: 22vw;
                             margin-bottom: 0vw;
                             height: 6vw;
                             white-space: normal;

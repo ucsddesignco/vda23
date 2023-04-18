@@ -23,11 +23,11 @@ function Experience() {
         <h2>APPRENTICE EXPERIENCE</h2>
         <div className="apprentice-container">
           <div className="section-1">
-            <img className='symbol section-1-symbol4' src={symbol4} alt="" />
             <div className="section-1-left">
               <div id="top">
-                <h4>VDA: THE WAY OF VISUAL DESIGN</h4> 
-                <a target='_blank' href='https://thumbs.dreamstime.com/b/capybara-business-suit-animal-businessman-funny-boss-capybara-headed-man-formal-business-suit-generative-ai-illustration-268259284.jpg'>Read more about the VDA experience here</a>
+                <img className='symbol section-1-symbol4' src={symbol4} alt="" />
+                <h4>From Apprentice to Master: The VDA 2023 Experience</h4> 
+                <a target='_blank' href='https://medium.com/@ucsddesignco/from-apprentice-to-master-the-vda-2023-experience-e19c946f7de'>Read full article</a>
               </div>
               <div id="bottom">
                 <p className="quote">“Coming into VDA, I had some experience with design but not on Figma and Illustrator. VDA allowed me to have the space to learn, experiment, and get feedback. Through the tutorials...resources, and Zoom calls with mentors, I felt like I was able to make tremendous progress and learn so much.”</p>
@@ -81,7 +81,7 @@ function Experience() {
           <h2>APPRENTICE EXPERIENCE</h2>
           <img className='symbol symbol1' src={symbol4} alt="" />
           <div className="section-one">
-            <h4 className='header-text'>VDA: THE WAY OF VISUAL DESIGN</h4> 
+            <h4 className='header-text'>From Apprentice to Master: The VDA 2023 Experience</h4> 
             <a target='_blank' href='https://thumbs.dreamstime.com/b/capybara-business-suit-animal-businessman-funny-boss-capybara-headed-man-formal-business-suit-generative-ai-illustration-268259284.jpg'>Read full article</a>
           </div>
           <div className="quote">
@@ -121,7 +121,7 @@ function Experience() {
         <div className="pinkbar" />
         <div className='learn-more-container'>
           <h4>Learn more about the VDA program below!</h4>
-          <button type="button" className='learn-more-button'>
+          <button type="button" className='learn-more-button' href="/about" >
             <p>LEARN MORE</p>
             <img src={Star} alt="" />
           </button>
