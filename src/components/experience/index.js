@@ -17,9 +17,9 @@ import symbol6 from "../../assets/images/program/symbol6.png"
 import symbol7 from "../../assets/images/program/symbol7.png"
 import Star from "../../assets/images/program/star.svg"
 
-function Experience() {
+function Experience({apprenticeRef}) {
   return (
-    <div className='experience'>
+    <div ref={apprenticeRef} className='experience'>
       <div className='desktop-experience'>
         <h2>APPRENTICE EXPERIENCE</h2>
         <div className="apprentice-container">

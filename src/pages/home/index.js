@@ -134,7 +134,7 @@ function Showcase() {
 					/>
 				</section>
 			</div>
-      <Experience />
+      <Experience apprenticeRef={apprenticeRef}/>
 			<Footer />
 		</>
 	)
