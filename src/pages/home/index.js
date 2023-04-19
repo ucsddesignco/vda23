@@ -128,7 +128,7 @@ function Showcase() {
 					<ThumbnailList
 						thumbnails={ImageData}
 						thumbnailsPerRow={winWidth > 600 ? 4 : 1}
-						justifyContent='center'
+						justifyContent='left'
 						forceSquare
 						imagePadding={winWidth > 600 ? 10 : 0}
 					/>
