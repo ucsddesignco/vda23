@@ -35,20 +35,20 @@ function Experience({apprenticeRef}) {
                 <h5 className="quote-name">Ellie Chen, 1st year</h5>
               </div>
             </div>
-            <img alttext="Image of Students at a VDA Meeting" src={exp1} />
+            <img alt="Image of Students at a VDA Meeting" src={exp1} />
 
           </div>
           <div className="section-2">
             <img className='symbol section-2-symbol3' src={symbol3} alt="" />
-            <img alttext="VDA Group Photo" className='section-2-photo' src={exp2} />
+            <img alt="VDA Group Photo" className='section-2-photo' src={exp2} />
           </div>
           
           <div className='section-3'>
             <img className='symbol section-3-symbol6' src={symbol6} alt="" />
             <img className='symbol section-3-symbol7' src={symbol7} alt="" />
-            <img alttext="Somi Somi Social" className="section-3-left" src={exp3} /> 
+            <img alt="Somi Somi Social" className="section-3-left" src={exp3} /> 
             <div className="section-3-right">
-              <img alttext="Image of VDA Meeting" id="top" src={exp4} />
+              <img alt="Image of VDA Meeting" id="top" src={exp4} />
               <div id="bottom">
                 <p>“I learned a lot of Adobe Illustrator skills. I was terrified of it before, but I'm so much more familiar with it now. Now that the fear is gone, I can grow at a faster pace.”</p>
                 <h5 className='quote-name'>Tina Sohrabi, 5th year</h5>
@@ -62,7 +62,7 @@ function Experience({apprenticeRef}) {
               <p>“VDA was overall an extremely fun, rewarding, and educational experience! If/when there's recruitment for a new cohort next year I'd recommend it 11/10 to anyone who's passionate about learning visual design, regardless of experience level. You can tell the mentors truly care about all the apprentices in the program and feel them cheering you on along the way.”</p>
               <h5 className='quote-name'>Katie Bonilla, 3rd year</h5>
             </div>
-            <img alttext="Two VDA Students enjoying class." className="section-4-right" src={exp5} />
+            <img alt="Two VDA Students enjoying class." className="section-4-right" src={exp5} />
           </div>
           
           <div className="pinkbar" />
@@ -91,16 +91,16 @@ function Experience({apprenticeRef}) {
             <p>“Coming into VDA, I had some experience with design but not on Figma and Illustrator. VDA allowed me to have the space to learn, experiment, and get feedback. Through the tutorials...resources, and Zoom calls with mentors, I felt like I was able to make tremendous progress and learn so much.”</p>
             <h5 className="quote-name">Ellie Chen, 1st year</h5>
           </div>
-          <img alttext="VDA Group Photo" className='section-2-photo' src={exp2} />
+          <img alt="VDA Group Photo" className='section-2-photo' src={exp2} />
           <div className='shapes'>
             <img className='symbol symbol2' src={symbol2} alt="" />
             <img className='symbol symbol3' src={symbol5} alt="" />
           </div>
-          <img alttext="Image of Students at a VDA Meeting" src={exp1} />
+          <img alt="Image of Students at a VDA Meeting" src={exp1} />
           <div className='shapes'>
             <img className='symbol symbol4' src={symbol6} alt="" />
           </div>
-          <img alttext="Somi Somi Social" className="section-3-left" src={exp3} /> 
+          <img alt="Somi Somi Social" className="section-3-left" src={exp3} /> 
           <div className='shapes'>
             <img className='symbol symbol5' src={symbol3} alt="" />
           </div>
@@ -111,8 +111,8 @@ function Experience({apprenticeRef}) {
           <div className='shapes'>
             <img className='symbol symbol6' src={symbol1} alt="" />
           </div>
-          <img alttext="Image of VDA Meeting" id="top" src={exp4} />
-          <img alttext="Two VDA Students enjoying class." className="section-4-right" src={exp5} />
+          <img alt="Image of VDA Meeting" id="top" src={exp4} />
+          <img alt="Two VDA Students enjoying class." className="section-4-right" src={exp5} />
           <div className='shapes'>
             <img className='symbol symbol7' src={symbol7} alt="" />
           </div>
