@@ -85,7 +85,7 @@ function Experience() {
           <img className='symbol symbol1' src={symbol4} alt="" />
           <div className="section-one">
             <h4 className='header-text'>From Apprentice to Master: The VDA 2023 Experience</h4> 
-            <a target='_blank' href='https://thumbs.dreamstime.com/b/capybara-business-suit-animal-businessman-funny-boss-capybara-headed-man-formal-business-suit-generative-ai-illustration-268259284.jpg'>Read full article</a>
+            <a target='_blank' href='https://medium.com/@ucsddesignco/from-apprentice-to-master-the-vda-2023-experience-e19c946f7de'>Read full article</a>
           </div>
           <div className="quote">
             <p>“Coming into VDA, I had some experience with design but not on Figma and Illustrator. VDA allowed me to have the space to learn, experiment, and get feedback. Through the tutorials...resources, and Zoom calls with mentors, I felt like I was able to make tremendous progress and learn so much.”</p>
