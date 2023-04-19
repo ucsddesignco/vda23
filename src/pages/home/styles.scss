@@ -113,6 +113,7 @@
 	span {
 	  font-family: $title-font;
 	  transform: translateY(0.1em);
+	  -webkit-transform: translateY(0.1em);
 	  text-transform: uppercase;
 	  font-size:  clamp(.8rem,calc(1vw + 1rem),2rem);
 	}
@@ -134,14 +135,12 @@
     }
 
 	@media only screen and (max-width: 460px) {
-        width: 100%;
 		span {
 			font-size: calc(6.5vw);
 		}
     }
 
 	@media only screen and (max-width: 360px) {
-        width: 100%;
 		span {
 			font-size: calc(3vw + 8px);
 		}

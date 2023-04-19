@@ -154,15 +154,14 @@
                     }
 
                     p {
-                        line-height: 1em;
-                        height: 0.8em;
+                        transform: translateY(0.1em);
+                        -webkit-transform: translateY(0.1em);
                         font-size: 1.4rem;
                         font-family: $title-font;
 
                     }
                     img {
                         width: 1.75rem;
-                        transform: translateY(-0rem);
                         margin-left: 1rem;
                     }
 
@@ -174,18 +173,18 @@
                 
                     @media only screen and (max-width: 460px) {
                         p {
-                            font-size: calc(6vw);
+                            font-size: calc(5.5vw);
                         }
                     }
                 
                     @media only screen and (max-width: 390px) {
                         p {
-                            font-size: calc(5vw);
+                            font-size: calc(4.5vw);
                         }
                     }
                     @media only screen and (max-width: 340px) {
                         p {
-                            font-size: calc(4.5vw);
+                            font-size: calc(4vw);
                         }
                     }
                 }
