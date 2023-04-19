@@ -28,7 +28,7 @@ function Experience({apprenticeRef}) {
               <div id="top">
                 <img className='symbol section-1-symbol4' src={symbol4} alt="" />
                 <h4>From Apprentice to Master: The VDA 2023 Experience</h4> 
-                <a target='_blank' href='https://medium.com/@ucsddesignco/from-apprentice-to-master-the-vda-2023-experience-e19c946f7de'>Read full article</a>
+                <a target='_blank' href='https://medium.com/@ucsddesignco/from-apprentice-to-master-the-vda-2023-experience-e19c946f7de'>Read about the VDA experience here</a>
               </div>
               <div id="bottom">
                 <p className="quote">“Coming into VDA, I had some experience with design but not on Figma and Illustrator. VDA allowed me to have the space to learn, experiment, and get feedback. Through the tutorials...resources, and Zoom calls with mentors, I felt like I was able to make tremendous progress and learn so much.”</p>
