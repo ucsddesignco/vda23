@@ -112,8 +112,7 @@
 
 	span {
 	  font-family: $title-font;
-	  line-height: 1em;
-	  height: 0.8em;
+	  transform: translateY(0.1em);
 	  text-transform: uppercase;
 	  font-size:  clamp(.8rem,calc(1vw + 1rem),2rem);
 	}

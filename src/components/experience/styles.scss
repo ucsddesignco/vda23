@@ -165,6 +165,29 @@
                         transform: translateY(-0rem);
                         margin-left: 1rem;
                     }
+
+                    @media only screen and (max-width: $mobile) {
+                        p {
+                            font-size: 2rem;
+                        }
+                    }
+                
+                    @media only screen and (max-width: 460px) {
+                        p {
+                            font-size: calc(6vw);
+                        }
+                    }
+                
+                    @media only screen and (max-width: 390px) {
+                        p {
+                            font-size: calc(5vw);
+                        }
+                    }
+                    @media only screen and (max-width: 340px) {
+                        p {
+                            font-size: calc(4.5vw);
+                        }
+                    }
                 }
                 > button:active {
                     background-color: #008437;
@@ -483,13 +506,13 @@
                     border: none;
 
                     p {
+                        transform: translateY(0.1em);
                         font-size: 2rem;
                         font-family: $title-font;
 
                     }
                     img {
                         width: 2rem;
-                        transform: translateY(-0.2rem);
                         margin-left: 1rem;
                     }
                 }
