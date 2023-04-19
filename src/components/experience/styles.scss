@@ -149,6 +149,10 @@
                     height: 3.25rem;
                     color: black;
 
+                    &:hover {
+                        transform: scale(0.9);
+                    }
+
                     p {
                         line-height: 1em;
                         height: 0.8em;
